@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_/Scenes/Pendulum-Floor_1.unity
     guid: 615e7fc089e336b4ab086d31ea949c10
+  - enabled: 1
+    path: Assets/_/Scenes/Pendulum-Boss.unity
+    guid: 784f725aa309fa149bdd2a9e53595712
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
