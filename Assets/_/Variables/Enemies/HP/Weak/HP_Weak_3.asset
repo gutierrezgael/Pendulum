@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b19a3fc3bb9540dc803161f015a4f79, type: 3}
-  m_Name: HP
+  m_Name: HP_Weak_3
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.IntVariable
   m_Id: c958e81cf7274a0ca90237d0f3b9ceeb
   Persistent: 0
-  m_InitialValue: 0
+  m_InitialValue: 20
