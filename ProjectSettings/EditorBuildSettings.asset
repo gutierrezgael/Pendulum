@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_/Scenes/Pendulum-Menu.unity
+    guid: 350c034925e54c9458b19fb7363d567c
+  - enabled: 1
     path: Assets/_/Scenes/Pendulum-Floor_3.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
@@ -17,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_/Scenes/Pendulum-Boss.unity
     guid: 784f725aa309fa149bdd2a9e53595712
+  - enabled: 1
+    path: Assets/_/Scenes/Pendulum-Lose.unity
+    guid: dd8b0471cc10c5245a73a24b1bfd557b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
