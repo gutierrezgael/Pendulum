@@ -3671,7 +3671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &550580548
 Transform:
   m_ObjectHideFlags: 0
@@ -3681,7 +3681,7 @@ Transform:
   m_GameObject: {fileID: 550580547}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 39, z: 0}
+  m_LocalPosition: {x: 0, y: 29.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3804,7 +3804,7 @@ Camera:
     height: 1
   near clip plane: 0.2
   far clip plane: 500
-  field of view: 40
+  field of view: 60
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -11294,8 +11294,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
   operation: 2
-  sceneAsset: {fileID: 102900000, guid: ab14c14d832e946498fdd74ca84c9481, type: 3}
-  scenePath: Assets/_/Scenes/Pendulum-Floor_2.unity
+  sceneAsset: {fileID: 102900000, guid: 784f725aa309fa149bdd2a9e53595712, type: 3}
+  scenePath: Assets/_/Scenes/Pendulum-Boss.unity
   additive: 0
 --- !u!114 &1826366516
 MonoBehaviour:
@@ -11310,8 +11310,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
   operation: 0
-  sceneAsset: {fileID: 102900000, guid: 615e7fc089e336b4ab086d31ea949c10, type: 3}
-  scenePath: Assets/_/Scenes/Pendulum-Floor_1.unity
+  sceneAsset: {fileID: 102900000, guid: 9fa68f6aea3f53343b426b9a47f2ce37, type: 3}
+  scenePath: Assets/_/Scenes/Pendulum-Win.unity
   additive: 0
 --- !u!114 &1826366517
 MonoBehaviour:
@@ -11451,7 +11451,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1561917898}
+  m_Mesh: {fileID: 1649118449}
 --- !u!33 &1826366524
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -12939,7 +12939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3203261901019429749
 Transform:
   m_ObjectHideFlags: 0
@@ -12948,8 +12948,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3203261901019429514}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.20000005, y: 30, z: -4}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 29.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13236,7 +13236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &5563690194702969922
 MonoBehaviour:
   m_ObjectHideFlags: 0
