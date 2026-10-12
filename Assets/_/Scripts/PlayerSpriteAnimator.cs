@@ -5,12 +5,16 @@ public class PlayerSpriteAnimator : MonoBehaviour
     public Sprite[] upFrames;    // 4 frames, facing up
     public Sprite[] downFrames;  // 4 frames, facing down
     public float framesPerSecond = 8f;
-    public float moveThreshold = 0.02f; // min movement per frame to count as moving
+    public float moveThreshold = 0.02f;
+
+    [Header("Position")]
+    public float heightOffset = 1f;    // sprite height above the body's origin
+    public float screenUpOffset = 0.4f; // pushes the sprite up the screen so the feet sit on the hitbox
 
     SpriteRenderer sr;
-    Transform body;      // the capsule that actually moves
+    Transform body;
     Vector3 lastPos;
-    bool facingUp;       // remembers the last vertical direction
+    bool facingUp;
     float animTimer;
 
     void Awake()
@@ -28,6 +32,12 @@ public class PlayerSpriteAnimator : MonoBehaviour
         // Always face the camera, ignoring the capsule's rotation
         transform.rotation = cam.transform.rotation;
 
+        // "Up the screen" on the floor, declared once and used below
+        Vector3 screenUp = Vector3.ProjectOnPlane(cam.transform.up, Vector3.up).normalized;
+
+        // World-space position, so it doesn't spin with the capsule
+        transform.position = body.position + Vector3.up * heightOffset + screenUp * screenUpOffset;
+
         // Movement since last frame
         Vector3 delta = body.position - lastPos;
         lastPos = body.position;
@@ -37,11 +47,8 @@ public class PlayerSpriteAnimator : MonoBehaviour
 
         if (moving)
         {
-            // How much of the movement is "up the screen"?
-            Vector3 screenUp = Vector3.ProjectOnPlane(cam.transform.up, Vector3.up).normalized;
             float vertical = Vector3.Dot(delta, screenUp);
 
-            // Only change direction on real up/down movement; pure left/right keeps the last one
             if (Mathf.Abs(vertical) > 0.001f)
                 facingUp = vertical > 0f;
         }
@@ -57,7 +64,7 @@ public class PlayerSpriteAnimator : MonoBehaviour
         else
         {
             animTimer = 0f;
-            sr.sprite = frames[0]; // idle = first frame
+            sr.sprite = frames[0];
         }
     }
 }
