@@ -30,7 +30,7 @@ public class PersistentPlayer : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        PlayerSpawn spawn = FindFirstObjectByType<PlayerSpawn>();
+        PlayerSpawn spawn = FindAnyObjectByType<PlayerSpawn>();
         if (spawn == null) return;
 
         // The CharacterController overrides teleports unless it's disabled for a moment
