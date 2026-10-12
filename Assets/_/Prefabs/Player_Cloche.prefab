@@ -726,10 +726,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb4e19cdf516ea24d8c134833ebb5361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  fireRate: 3
-  bulletSpeed: 15
-  bulletSize: 0.3
-  range: 15
+  fireRate: 2
+  bulletSpeed: 25
+  bulletSize: 0.25
+  range: 30
 --- !u!1 &6280101150493721418
 GameObject:
   m_ObjectHideFlags: 0
