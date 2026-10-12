@@ -16319,7 +16319,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1760613343905275350, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
       propertyPath: field of view
-      value: 60
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760613343905275350, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
+      propertyPath: m_FOVAxisMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1760613343905275350, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
       propertyPath: orthographic size
@@ -16419,7 +16423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4346213064294401199, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
       propertyPath: m_SortingOrder
-      value: 999
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4346213064294401199, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
       propertyPath: m_MaskInteraction
@@ -16452,6 +16456,10 @@ PrefabInstance:
     - target: {fileID: 4466834837941080986, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631282746225440523, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6003044814578538790, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
       propertyPath: m_Enabled
