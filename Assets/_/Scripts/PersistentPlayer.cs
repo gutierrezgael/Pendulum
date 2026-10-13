@@ -37,7 +37,12 @@ public class PersistentPlayer : MonoBehaviour
         CharacterController cc = GetComponentInChildren<CharacterController>();
         if (cc != null) cc.enabled = false;
 
-        transform.SetPositionAndRotation(spawn.transform.position, spawn.transform.rotation);
+        // Move the whole player so the CharacterController's object (the part that actually
+        // moves) lands exactly on the spawn point. Moving only the root would also apply
+        // any height/offset between the root and the capsule, so the player jumps on Play.
+        transform.rotation = spawn.transform.rotation;
+        Transform body = cc != null ? cc.transform : transform;
+        transform.position += spawn.transform.position - body.position;
 
         if (cc != null) cc.enabled = true;
     }

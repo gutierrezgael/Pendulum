@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(EnemyHealth))]
 public class EnemyChaser : MonoBehaviour
@@ -53,7 +54,10 @@ public class EnemyChaser : MonoBehaviour
         if (player != null) return true;
         if (PersistentPlayer.Instance == null) return false;
 
-        player = PersistentPlayer.Instance.transform;
+        // The PersistentPlayer root stays at the spawn point (the middle of the room):
+        // the part that actually moves is the CharacterController's object.
+        CharacterController cc = PersistentPlayer.Instance.GetComponentInChildren<CharacterController>();
+        player = cc != null ? cc.transform : PersistentPlayer.Instance.transform;
         playerHealth = FindAnyObjectByType<Health>();
         return true;
     }
