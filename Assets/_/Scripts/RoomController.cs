@@ -30,8 +30,8 @@ public class RoomController : MonoBehaviour
     [Header("CES link (optional)")]
     [Tooltip("Kept at the number of enemies left. 0 = nobody left.")]
     public IntVariable enemiesLeftVariable;
-    [Tooltip("0 while the room isn't beaten, 1 once it is. Usable in a CES condition.")]
-    public IntVariable clearedVariable;
+    [Tooltip("False until the room is beaten, then true. Use it in your door's CES Variable condition.")]
+    public BoolVariable clearedVariable;
 
     [Header("Events")]
     [Tooltip("Close the doors, play a sound...")]
@@ -109,6 +109,6 @@ public class RoomController : MonoBehaviour
     void UpdateVariables()
     {
         if (enemiesLeftVariable != null) enemiesLeftVariable.RuntimeValue = enemiesAlive;
-        if (clearedVariable != null) clearedVariable.RuntimeValue = isCleared ? 1 : 0;
+        if (clearedVariable != null) clearedVariable.RuntimeValue = isCleared;
     }
 }
