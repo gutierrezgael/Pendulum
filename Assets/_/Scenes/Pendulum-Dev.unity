@@ -16610,6 +16610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Ring
       objectReference: {fileID: 0}
+    - target: {fileID: 1036416793811755399, guid: 45577f40e868eeb4fb01ac103a4572c5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2137140425996532275, guid: 45577f40e868eeb4fb01ac103a4572c5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
