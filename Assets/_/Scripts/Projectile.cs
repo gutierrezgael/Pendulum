@@ -3,8 +3,11 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public void Launch(Vector3 direction, float speed, float size, float range)
+    int damage = 1;
+
+    public void Launch(Vector3 direction, float speed, float size, float range, int damage)
     {
+        this.damage = damage;
         transform.localScale = Vector3.one * size;
 
         GetComponent<Rigidbody>().linearVelocity = direction * speed;
@@ -16,6 +19,10 @@ public class Projectile : MonoBehaviour
     {
         if (other.isTrigger) return; // ignore trigger zones
         if (other.GetComponentInParent<ThirdPersonController>() != null) return;
+
+        EnemyHealth enemy = other.GetComponentInParent<EnemyHealth>();
+        if (enemy != null) enemy.TakeDamage(damage);
+
         Destroy(gameObject);
     }
 }

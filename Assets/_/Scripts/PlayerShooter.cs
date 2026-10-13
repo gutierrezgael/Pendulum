@@ -42,7 +42,7 @@ public class PlayerShooter : MonoBehaviour
             direction.Normalize();
 
             Projectile p = Instantiate(projectilePrefab, shootPoint.position, Quaternion.LookRotation(direction));
-            p.Launch(direction, stats.bulletSpeed, stats.bulletSize, stats.range);
+            p.Launch(direction, stats.bulletSpeed, stats.bulletSize, stats.range, stats.damage);
         }
     }
 }
