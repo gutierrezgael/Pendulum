@@ -16555,6 +16555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 1602784043544983388, guid: 32783924f35f0274184830aeb9999889, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -275
+      objectReference: {fileID: 0}
     - target: {fileID: 5258085820760159286, guid: 32783924f35f0274184830aeb9999889, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -16763,7 +16767,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4574965531319889945, guid: 50506ee0279b388468e2b7dd478498de, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
