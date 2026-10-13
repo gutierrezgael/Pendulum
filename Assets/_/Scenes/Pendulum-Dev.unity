@@ -16526,6 +16526,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8058200886221809964, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
+      propertyPath: range
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8058200886221809964, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
+      propertyPath: fireRate
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8058200886221809964, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
+      propertyPath: bulletSpeed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
