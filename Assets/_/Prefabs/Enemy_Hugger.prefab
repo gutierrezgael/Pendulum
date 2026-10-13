@@ -44,10 +44,10 @@ Light:
   serializedVersion: 13
   m_Type: 0
   m_Color: {r: 0.27417356, g: 0, b: 0.47058824, a: 1}
-  m_Intensity: 708.3
+  m_Intensity: 745.9
   m_Range: 20.3
-  m_SpotAngle: 15
-  m_InnerSpotAngle: 0
+  m_SpotAngle: 31.46923
+  m_InnerSpotAngle: 8.2615385
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
@@ -478,7 +478,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -497,8 +497,11 @@ MonoBehaviour:
   moveSpeed: 3
   contactDamage: 2
   contactCooldown: 1
+  contactRange: 1.5
   aggroRange: 0
   sprite: {fileID: 2961031155669833929}
+  spriteHeight: 1
+  spriteScreenUp: 0.4
 --- !u!65 &1880249033029055649
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -514,9 +517,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.73, y: 1.02, z: 2.68}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3, y: 3, z: 3}
+  m_Center: {x: 0, y: 1, z: 0}

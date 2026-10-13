@@ -16707,18 +16707,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 463912928}
     m_Modifications:
-    - target: {fileID: 6852809961204491597, guid: 50506ee0279b388468e2b7dd478498de, type: 3}
-      propertyPath: m_Intensity
-      value: 745.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6852809961204491597, guid: 50506ee0279b388468e2b7dd478498de, type: 3}
-      propertyPath: m_SpotAngle
-      value: 31.46923
-      objectReference: {fileID: 0}
-    - target: {fileID: 6852809961204491597, guid: 50506ee0279b388468e2b7dd478498de, type: 3}
-      propertyPath: m_InnerSpotAngle
-      value: 8.2615385
-      objectReference: {fileID: 0}
     - target: {fileID: 7146122988675453299, guid: 50506ee0279b388468e2b7dd478498de, type: 3}
       propertyPath: m_Name
       value: Enemy_Hugger
