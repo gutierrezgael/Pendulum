@@ -1,57 +1,114 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using ColliderEventSystem;
 
+
 public class RoomController : MonoBehaviour
 {
+    [System.Serializable]
+    public class SpawnEntry
+    {
+        [Tooltip("Empty object marking where the enemy appears")]
+        public Transform point;
+        [Tooltip("Enemy prefab (needs EnemyHealth)")]
+        public EnemyHealth enemyPrefab;
+    }
+
+    [Header("Start")]
+    [Tooltip("Checked: nothing happens until StartRoom() is called (by your CES). Unchecked: starts right away (start room, item room).")]
+    public bool waitForPlayer = true;
+
+    [Header("Enemies spawned when the room starts")]
+    public SpawnEntry[] spawns;
+
     [Header("State (read only)")]
     [SerializeField] int enemiesAlive;
+    [SerializeField] bool hasStarted;
     [SerializeField] bool isCleared;
 
     [Header("CES link (optional)")]
-    [Tooltip("CES IntVariable kept at the number of enemies left. 0 = room cleared, usable in a CES condition (e.g. to open doors).")]
+    [Tooltip("Kept at the number of enemies left. 0 = nobody left.")]
     public IntVariable enemiesLeftVariable;
+    [Tooltip("0 while the room isn't beaten, 1 once it is. Usable in a CES condition.")]
+    public IntVariable clearedVariable;
 
     [Header("Events")]
-    [Tooltip("Open doors, spawn a reward, play a sound...")]
+    [Tooltip("Close the doors, play a sound...")]
+    public UnityEvent onRoomStarted;
+    [Tooltip("Open the doors, spawn a reward...")]
     public UnityEvent onRoomCleared;
 
+    // Enemies placed by hand in the room: they sleep until the room starts
+    readonly List<EnemyHealth> placedEnemies = new List<EnemyHealth>();
+
     public bool IsCleared => isCleared;
+    public bool HasStarted => hasStarted;
     public int EnemiesAlive => enemiesAlive;
 
     void Start()
     {
-        EnemyHealth[] enemies = GetComponentsInChildren<EnemyHealth>(true);
-        enemiesAlive = enemies.Length;
+        foreach (EnemyHealth e in GetComponentsInChildren<EnemyHealth>(true))
+        {
+            placedEnemies.Add(e);
+            Track(e);
+            if (waitForPlayer) e.gameObject.SetActive(false);
+        }
 
-        foreach (EnemyHealth e in enemies)
-            e.Died += OnEnemyDied;
+        UpdateVariables();
 
-        UpdateVariable();
+        if (!waitForPlayer) StartRoom();
+    }
 
-        // A room with no enemies (item room, start room) is cleared right away
+    // --- Call this from the CES (Invoke Events) when the player enters ---
+    public void StartRoom()
+    {
+        if (hasStarted || isCleared) return;
+        hasStarted = true;
+
+        foreach (EnemyHealth e in placedEnemies)
+            if (e != null) e.gameObject.SetActive(true);
+
+        foreach (SpawnEntry s in spawns)
+        {
+            if (s.point == null || s.enemyPrefab == null) continue;
+            EnemyHealth e = Instantiate(s.enemyPrefab, s.point.position, s.point.rotation, transform);
+            Track(e);
+        }
+
+        UpdateVariables();
+        onRoomStarted.Invoke();
+
+        // Nothing to fight (item room, empty room): cleared right away
         if (enemiesAlive == 0) Clear();
+    }
+
+    void Track(EnemyHealth enemy)
+    {
+        enemiesAlive++;
+        enemy.Died += OnEnemyDied;
     }
 
     void OnEnemyDied(EnemyHealth enemy)
     {
         enemy.Died -= OnEnemyDied;
         enemiesAlive = Mathf.Max(0, enemiesAlive - 1);
-        UpdateVariable();
+        UpdateVariables();
 
-        if (enemiesAlive == 0) Clear();
+        if (enemiesAlive == 0 && hasStarted) Clear();
     }
 
     void Clear()
     {
         if (isCleared) return;
         isCleared = true;
+        UpdateVariables();
         onRoomCleared.Invoke();
     }
 
-    void UpdateVariable()
+    void UpdateVariables()
     {
-        if (enemiesLeftVariable != null)
-            enemiesLeftVariable.RuntimeValue = enemiesAlive;
+        if (enemiesLeftVariable != null) enemiesLeftVariable.RuntimeValue = enemiesAlive;
+        if (clearedVariable != null) clearedVariable.RuntimeValue = isCleared ? 1 : 0;
     }
 }

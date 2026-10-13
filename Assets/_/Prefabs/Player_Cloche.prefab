@@ -755,10 +755,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb4e19cdf516ea24d8c134833ebb5361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  fireRate: 2
-  bulletSpeed: 25
+  fireRate: 1.5
+  bulletSpeed: 10
   bulletSize: 0.25
-  range: 30
+  range: 7.5
   damage: 1
 --- !u!1 &6280101150493721418
 GameObject:
@@ -789,7 +789,7 @@ Transform:
   m_GameObject: {fileID: 6280101150493721418}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.14, y: 30, z: 0}
+  m_LocalPosition: {x: -0.14, y: 36.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -959,7 +959,7 @@ Transform:
   m_GameObject: {fileID: 7256619190120130669}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.14, y: 30, z: 0}
+  m_LocalPosition: {x: -0.14, y: 36.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1128,7 +1128,7 @@ Transform:
   m_GameObject: {fileID: 8455229043376969453}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.14, y: 29.97, z: 0}
+  m_LocalPosition: {x: -0.14, y: 36.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

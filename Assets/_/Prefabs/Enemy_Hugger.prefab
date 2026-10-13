@@ -231,7 +231,6 @@ GameObject:
   - component: {fileID: 6101514431140272223}
   - component: {fileID: 8527302178313147539}
   - component: {fileID: 9016864825000944339}
-  - component: {fileID: 4574965531319889945}
   - component: {fileID: 4598460816434513636}
   - component: {fileID: 925110946624819444}
   m_Layer: 0
@@ -336,33 +335,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4574965531319889945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5150330685775493262}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a92f28de6ef04b69ab05194dfd044ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.ColliderEvent
-  conditions: []
-  actions:
-  - {fileID: 925110946624819444}
-  - {fileID: 4598460816434513636}
-  exitActions: []
-  holdTime: 0
-  afterTrigger: 3
-  debugLogging: 1
-  showHintMaterial: 0
-  hintTargetMode: 1
-  hintRenderer: {fileID: 0}
-  hintMaterial: {fileID: 0}
-  requiredTags:
-  - Player
-  debugColor: {r: 1, g: 0.4, b: 0, a: 0.3}
 --- !u!114 &4598460816434513636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,6 +471,9 @@ MonoBehaviour:
   contactCooldown: 1
   contactRange: 1.5
   aggroRange: 0
+  fitHitbox: 1
+  hitboxCenterY: 1
+  hitboxHeight: 3
   sprite: {fileID: 2961031155669833929}
   spriteHeight: 1
   spriteScreenUp: 0.4
