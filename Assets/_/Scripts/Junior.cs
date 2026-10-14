@@ -52,6 +52,8 @@ public class Junior : MonoBehaviour
 
         if (body == null && !FindBody()) return;
 
+        if (!cc.enabled) return; // never move a disabled controller
+
         // Copy the player's real movement (not teleports or room slides), but faster
         Vector3 move = playerCC.velocity;
         move.y = 0f;
