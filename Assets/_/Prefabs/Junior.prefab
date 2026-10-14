@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c39b560b7972e459e70f1893826fb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Junior
-  speedMultiplier: 2
+  speedMultiplier: 4
   contactDamage: 1
   hitInterval: 0.5
   hitRadius: 0.8

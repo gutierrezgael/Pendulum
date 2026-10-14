@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: Junior
   description: "Un petit compagnon se joint a votre qu\xEAte!"
-  icon: {fileID: 0}
+  icon: {fileID: 1406716071, guid: 7bda33c29d2e6ee44b8c6d42a86e114c, type: 3}
   type: 0
   damageBonus: 0
   fireRateBonus: 0
