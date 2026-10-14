@@ -35,6 +35,14 @@ public class EnemyChaser : MonoBehaviour
     Transform player;
     float nextHitTime;
 
+    // --- Chronomètre Cassé: every enemy stops (and shooting enemies should check IsFrozen too) ---
+    static float frozenUntil;
+    public static bool IsFrozen => Time.time < frozenUntil;
+    public static void FreezeAll(float seconds) => frozenUntil = Time.time + seconds;
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    static void ResetStatics() => frozenUntil = 0f;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -57,6 +65,7 @@ public class EnemyChaser : MonoBehaviour
     void FixedUpdate()
     {
         if (!FindPlayer()) return;
+        if (IsFrozen) return; // frozen: no movement, no contact damage
 
         Vector3 toPlayer = player.position - transform.position;
         toPlayer.y = 0f;

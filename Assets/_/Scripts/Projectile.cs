@@ -6,6 +6,9 @@ public class Projectile : MonoBehaviour
     [Tooltip("Writes in the Console what the bullet touches (untick when everything works)")]
     public bool debugHits = true;
 
+    [Tooltip("Goes through enemies instead of disappearing (the Engrenage Perdu)")]
+    public bool pierceEnemies = false;
+
     int damage = 1;
 
     public void Launch(Vector3 direction, float speed, float size, float range, int damage)
@@ -28,12 +31,13 @@ public class Projectile : MonoBehaviour
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
-            Destroy(gameObject);
+            if (!pierceEnemies) Destroy(gameObject);
             return;
         }
 
         if (other.isTrigger) return; // ignore trigger zones
         if (other.GetComponentInParent<ThirdPersonController>() != null) return;
+        if (other.GetComponentInParent<Junior>() != null) return; // bullets pass through Junior
 
         Destroy(gameObject);
     }
