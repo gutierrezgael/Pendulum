@@ -13,12 +13,6 @@ public class Junior : MonoBehaviour
     [Tooltip("Reach around Junior (added to the enemy's hitbox)")]
     public float hitRadius = 0.8f;
 
-    [Header("Position")]
-    [Tooltip("Where Junior appears next to Cloche")]
-    public Vector3 followOffset = new Vector3(1.5f, 0f, 0f);
-    [Tooltip("Farther than this from Cloche (new room, new floor): Junior jumps back next to Cloche")]
-    public float teleportDistance = 14f;
-
     [Header("Sprite (drawn over the controller)")]
     [Tooltip("Child object with a SpriteRenderer")]
     public Transform sprite;
@@ -45,7 +39,6 @@ public class Junior : MonoBehaviour
     {
         cc = GetComponent<CharacterController>();
         if (sprite != null) spriteRenderer = sprite.GetComponent<SpriteRenderer>();
-        DontDestroyOnLoad(gameObject); // follows the player through the floors
     }
 
     void Update()
@@ -58,15 +51,6 @@ public class Junior : MonoBehaviour
         }
 
         if (body == null && !FindBody()) return;
-
-        // Too far (room change, new floor): come back
-        Vector3 away = transform.position - body.position;
-        away.y = 0f;
-        if (away.magnitude > teleportDistance)
-        {
-            Snap();
-            return;
-        }
 
         // Copy the player's real movement (not teleports or room slides), but faster
         Vector3 move = playerCC.velocity;
@@ -126,18 +110,9 @@ public class Junior : MonoBehaviour
             playerCC = c;
             body = c.transform;
             Physics.IgnoreCollision(cc, playerCC); // they don't block each other
-            Snap();
             return true;
         }
         return false;
-    }
-
-    void Snap()
-    {
-        // A CharacterController overrides teleports unless it's disabled for a moment
-        cc.enabled = false;
-        transform.position = body.position + followOffset;
-        cc.enabled = true;
     }
 
     void HitEnemies()

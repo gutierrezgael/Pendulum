@@ -18,6 +18,7 @@ public class PlayerInventory : MonoBehaviour
     float activeReadyTime;
     int bonusMaxHealth;
     int floorDamageBonus; // Syringe: lasts until the next floor
+    readonly List<GameObject> spawnedCompanions = new List<GameObject>();
 
     public float ActiveCooldownLeft => Mathf.Max(0f, activeReadyTime - Time.time);
 
@@ -96,11 +97,8 @@ public class PlayerInventory : MonoBehaviour
             controller.SprintSpeed = Mathf.Max(1f, controller.SprintSpeed + item.moveSpeedBonus);
         }
 
-        if (item.companionPrefab != null)
-        {
-            Transform body = controller != null ? controller.transform : transform;
-            Instantiate(item.companionPrefab, body.position + Vector3.right * 1.5f, Quaternion.identity);
-        }
+        // Picked up a companion: it shows up on Cloche right away
+        if (item.companionPrefab != null) RespawnCompanions();
 
         Health health = FindAnyObjectByType<Health>();
         if (health == null) return;
@@ -113,6 +111,25 @@ public class PlayerInventory : MonoBehaviour
         }
 
         if (item.healOnPickup > 0) health.Add(item.healOnPickup);
+    }
+
+    // --- Companions (Junior) ---
+
+    // Called by every RoomController when the player enters a room:
+    // old companions are removed, new ones appear on Cloche.
+    public void RespawnCompanions()
+    {
+        foreach (GameObject companion in spawnedCompanions)
+            if (companion != null) Destroy(companion);
+        spawnedCompanions.Clear();
+
+        Vector3 spawnPosition = (controller != null ? controller.transform : transform).position;
+
+        foreach (ItemData item in passives)
+        {
+            if (item.companionPrefab == null) continue;
+            spawnedCompanions.Add(Instantiate(item.companionPrefab, spawnPosition, Quaternion.identity));
+        }
     }
 
     // --- Active item ---

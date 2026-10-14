@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using ColliderEventSystem;
 
-
 public class RoomController : MonoBehaviour
 {
     [System.Serializable]
@@ -63,6 +62,11 @@ public class RoomController : MonoBehaviour
     // --- Call this from the CES (Invoke Events) when the player enters ---
     public void StartRoom()
     {
+        // Every time the player comes in, companions (Junior) respawn on Cloche
+        PlayerInventory inventory = FindAnyObjectByType<PlayerInventory>();
+        if (inventory != null) inventory.RespawnCompanions();
+
+        // The fight itself only starts once
         if (hasStarted || isCleared) return;
         hasStarted = true;
 

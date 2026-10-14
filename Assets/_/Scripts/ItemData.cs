@@ -2,6 +2,9 @@ using UnityEngine;
 
 public enum ItemType { Passive, Active }
 
+// Internal only: used by the Item Pool to decide how often an item shows up. Never displayed in game.
+public enum Rarity { Common, Uncommon, Rare, Legendary }
+
 // New effects are added at the end so existing item assets keep their value
 public enum ActiveEffect { Heal, Blast, Gear, AreaDamage, FreezeEnemies, Syringe }
 
@@ -13,6 +16,8 @@ public class ItemData : ScriptableObject
     [TextArea] public string description;
     public Sprite icon;
     public ItemType type = ItemType.Passive;
+    [Tooltip("Internal only (never shown in game): how often an item room offers it. The odds are set in the Item Pool.")]
+    public Rarity rarity = Rarity.Common;
 
     [Header("Passive: added to the player's stats (negative = worse)")]
     public int damageBonus;
@@ -25,7 +30,7 @@ public class ItemData : ScriptableObject
     public int maxHealthBonus;
     [Tooltip("HP healed right when picked up")]
     public int healOnPickup;
-    [Tooltip("Optional: a companion that appears with this item (Junior). Needs the Junior script.")]
+    [Tooltip("Optional: a companion that appears on Cloche every time she enters a room (Junior). Needs the Junior script.")]
     public GameObject companionPrefab;
 
     [Header("Active: used with the key set on PlayerInventory")]
