@@ -10,20 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8dd2f1d3ec1bf6742b3b8ba2755ceb67, type: 3}
-  m_Name: BellHandle
+  m_Name: SynthethicOil
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemName: "Poign\xE9e de Grelots"
-  description: '+Dommage du Tintement
+  itemName: "Huile Synth\xE9tique"
+  description: '++Vitesse du Tintement
 
-    +Distance du Tintement'
+    +Vitesse du Mouvement
+
+    --Grosseur
+    du Tintement'
   icon: {fileID: 0}
   type: 0
-  damageBonus: 3
+  rarity: 3
+  damageBonus: 0
   fireRateBonus: 0
-  bulletSpeedBonus: 0
-  bulletSizeBonus: 0
-  rangeBonus: 3
-  moveSpeedBonus: 0
+  bulletSpeedBonus: 6
+  bulletSizeBonus: -0.15
+  rangeBonus: 0
+  moveSpeedBonus: 1
   maxHealthBonus: 0
   healOnPickup: 0
   companionPrefab: {fileID: 0}

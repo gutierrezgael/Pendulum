@@ -10,30 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8dd2f1d3ec1bf6742b3b8ba2755ceb67, type: 3}
-  m_Name: CopperSupplements
+  m_Name: MercurySyringe
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemName: Anti-Rouille
-  description: '++Dommage du Tintement
-
-    +Taille du Tintement'
+  itemName: Seringue de Mercure
+  description: Vous pouvez augmenter votre dommage pour ce
   icon: {fileID: 0}
-  type: 0
-  damageBonus: 5
+  type: 1
+  rarity: 0
+  damageBonus: 0
   fireRateBonus: 0
   bulletSpeedBonus: 0
-  bulletSizeBonus: 0.3
+  bulletSizeBonus: 0
   rangeBonus: 0
   moveSpeedBonus: 0
   maxHealthBonus: 0
   healOnPickup: 0
   companionPrefab: {fileID: 0}
   activeEffect: 0
-  cooldown: 20
-  effectAmount: 3
+  cooldown: 5
+  effectAmount: 2
   effectPrefab: {fileID: 0}
-  radius: 3
-  duration: 4
-  selfDamage: 20
-  projectileSpeed: 10
-  projectileSize: 2
-  projectileRange: 25
+  radius: 0
+  duration: 0
+  selfDamage: 4
+  projectileSpeed: 0
+  projectileSize: 0
+  projectileRange: 0

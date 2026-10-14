@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8dd2f1d3ec1bf6742b3b8ba2755ceb67, type: 3}
-  m_Name: Junior
+  m_Name: Bells
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemName: Junior
-  description: "Un petit compagnon se joint a votre qu\xEAte!"
-  icon: {fileID: 1406716071, guid: 7bda33c29d2e6ee44b8c6d42a86e114c, type: 3}
+  itemName: Clochettes
+  description: ++Distance du Tintement
+  icon: {fileID: 0}
   type: 0
-  damageBonus: 0
+  rarity: 1
+  damageBonus: 3
   fireRateBonus: 0
   bulletSpeedBonus: 0
   bulletSizeBonus: 0
-  rangeBonus: 0
+  rangeBonus: 6
   moveSpeedBonus: 0
   maxHealthBonus: 0
   healOnPickup: 0
-  companionPrefab: {fileID: 4151163209296275464, guid: ef74603dbb7ed7643ae57eb8fc4a09d4, type: 3}
+  companionPrefab: {fileID: 0}
   activeEffect: 0
   cooldown: 20
   effectAmount: 3

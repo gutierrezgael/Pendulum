@@ -10,25 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8dd2f1d3ec1bf6742b3b8ba2755ceb67, type: 3}
-  m_Name: SynthethicOil
+  m_Name: SparePendulum
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemName: "Huile Synth\xE9tique"
-  description: '++Vitesse du Tintement
+  itemName: Pendule de Rechange
+  description: '++PV
 
-    +Vitesse du Mouvement
-
-    --Grosseur
-    du Tintement'
+    ++PV Max'
   icon: {fileID: 0}
   type: 0
+  rarity: 3
   damageBonus: 0
   fireRateBonus: 0
-  bulletSpeedBonus: 6
-  bulletSizeBonus: -0.15
+  bulletSpeedBonus: 0
+  bulletSizeBonus: 0
   rangeBonus: 0
-  moveSpeedBonus: 1
-  maxHealthBonus: 0
-  healOnPickup: 0
+  moveSpeedBonus: 0
+  maxHealthBonus: 20
+  healOnPickup: 20
   companionPrefab: {fileID: 0}
   activeEffect: 0
   cooldown: 20
