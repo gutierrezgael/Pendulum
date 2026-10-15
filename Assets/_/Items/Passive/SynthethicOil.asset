@@ -19,7 +19,7 @@ MonoBehaviour:
 
     --Grosseur
     du Tintement'
-  icon: {fileID: 0}
+  icon: {fileID: -1971087484, guid: 948e8b6dff2e8384486b294b6acfe04d, type: 3}
   type: 0
   rarity: 3
   damageBonus: 0

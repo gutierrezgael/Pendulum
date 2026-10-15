@@ -16,7 +16,7 @@ MonoBehaviour:
   description: '++Vitesse du Mouvement
 
     ++Distance du Tintement'
-  icon: {fileID: 0}
+  icon: {fileID: 787594309, guid: 78a9073342abb334fa47b61a9eb63f5e, type: 3}
   type: 0
   rarity: 3
   damageBonus: 0

@@ -16,8 +16,9 @@ MonoBehaviour:
   description: '-Taille du Tintement
 
     +Distance du Tintement'
-  icon: {fileID: 0}
+  icon: {fileID: -1823107459, guid: 1d8af4a735878bd498ff7493d6914fea, type: 3}
   type: 0
+  rarity: 0
   damageBonus: 0
   fireRateBonus: 0
   bulletSpeedBonus: 0
