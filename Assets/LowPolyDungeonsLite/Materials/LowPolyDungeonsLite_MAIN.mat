@@ -25,6 +25,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _DETAIL_MULX2
   - _NORMALMAP
   - _SPECULAR_SETUP
   m_InvalidKeywords: []
@@ -56,7 +57,7 @@ Material:
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: 075cd84517e03b146b19a02532ce7839, type: 3}
         m_Scale: {x: -100, y: -100}
-        m_Offset: {x: 0.34, y: 0}
+        m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -75,8 +76,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Scale: {x: 0, y: 0}
+        m_Offset: {x: -100, y: -100}
     - _DetailMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -86,7 +87,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 3871af28d3a2f954eb5467b2d9d67263, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DistortionVectorMap:
@@ -116,7 +117,7 @@ Material:
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 075cd84517e03b146b19a02532ce7839, type: 3}
         m_Scale: {x: -100, y: -100}
-        m_Offset: {x: 0.34, y: 0}
+        m_Offset: {x: 0, y: 0}
     - _MaskMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -202,7 +203,7 @@ Material:
     - _Blend: 0
     - _BlendMode: 0
     - _BlendModePreserveSpecular: 1
-    - _BumpScale: 24
+    - _BumpScale: 10
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _CoatMask: 0
@@ -213,7 +214,7 @@ Material:
     - _DepthOffsetEnable: 0
     - _DetailAlbedoMapScale: 1
     - _DetailAlbedoScale: 1
-    - _DetailNormalMapScale: 1
+    - _DetailNormalMapScale: 1.192
     - _DetailNormalScale: 1
     - _DetailSmoothnessScale: 1
     - _DiffusionProfile: 0
@@ -347,9 +348,9 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.82306534, b: 0.69411767, a: 1}
+    - _BaseColor: {r: 0.66981125, g: 0.72791004, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 0.82306534, b: 0.69411767, a: 1}
+    - _Color: {r: 0.6698113, g: 0.72791004, b: 1, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
