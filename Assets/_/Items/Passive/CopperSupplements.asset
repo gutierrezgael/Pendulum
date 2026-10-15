@@ -16,7 +16,7 @@ MonoBehaviour:
   description: '++Dommage du Tintement
 
     +Taille du Tintement'
-  icon: {fileID: 0}
+  icon: {fileID: -379519651, guid: 2da75f41cbb7556429dd773a9dc31714, type: 3}
   type: 0
   rarity: 2
   damageBonus: 5

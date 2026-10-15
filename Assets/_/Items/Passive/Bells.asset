@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: Clochettes
   description: ++Distance du Tintement
-  icon: {fileID: 0}
+  icon: {fileID: 380299041, guid: 3fa39eb84c4db1b4eab406a7982fc531, type: 3}
   type: 0
   rarity: 1
   damageBonus: 3

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: Bombe d'Asbestos
   description: Une bombe qui endommage tout ce qui vous entoure.
-  icon: {fileID: 1406716071, guid: 7bda33c29d2e6ee44b8c6d42a86e114c, type: 3}
+  icon: {fileID: -1248622580, guid: 47918e9a118a1f8458b0f7cc3ba3883f, type: 3}
   type: 1
   rarity: 2
   damageBonus: 0
