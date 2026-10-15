@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: Engrenage Perdu
   description: 'Projectile lourd. '
-  icon: {fileID: 1406716071, guid: 7bda33c29d2e6ee44b8c6d42a86e114c, type: 3}
+  icon: {fileID: -157068743, guid: 6f3c693cd4103544d8a75b0c64986f6e, type: 3}
   type: 1
   rarity: 0
   damageBonus: 0

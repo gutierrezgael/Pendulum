@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: "Chronom\xE8tre Cass\xE9"
   description: "Vous pouvez arr\xEAter le temps."
-  icon: {fileID: 0}
+  icon: {fileID: 1431074373, guid: fd1c4355bd55b03489c98d79b44dff1f, type: 3}
   type: 1
   rarity: 3
   damageBonus: 0
