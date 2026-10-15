@@ -48,7 +48,7 @@ MonoBehaviour:
   maximum: 10
   startValue: 10
   variable: {fileID: 11400000, guid: e99fd6bf73161874eb2336cde59d1a66, type: 2}
-  resetOnStart: 1
+  resetOnStart: 0
   text: {fileID: 0}
   format: '{0} / {1}'
   bar: {fileID: 0}
@@ -62,13 +62,13 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
+      - m_Target: {fileID: 7186969906496544292}
+        m_TargetAssemblyTypeName: GameOverHandler, Assembly-CSharp
+        m_MethodName: ShowGameOver
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

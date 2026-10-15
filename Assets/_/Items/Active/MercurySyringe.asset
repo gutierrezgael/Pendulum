@@ -26,7 +26,7 @@ MonoBehaviour:
   maxHealthBonus: 0
   healOnPickup: 0
   companionPrefab: {fileID: 0}
-  activeEffect: 0
+  activeEffect: 5
   cooldown: 5
   effectAmount: 2
   effectPrefab: {fileID: 0}
