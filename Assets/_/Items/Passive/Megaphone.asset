@@ -26,7 +26,7 @@ MonoBehaviour:
   fireRateBonus: 0
   bulletSpeedBonus: 0
   bulletSizeBonus: 2
-  rangeBonus: -6
+  rangeBonus: -6.5
   moveSpeedBonus: 0
   maxHealthBonus: 0
   healOnPickup: 0
