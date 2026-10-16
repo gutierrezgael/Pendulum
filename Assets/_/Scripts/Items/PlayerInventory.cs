@@ -3,7 +3,6 @@ using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-
 public class PlayerInventory : MonoBehaviour
 {
     [Header("Controls")]
@@ -15,12 +14,22 @@ public class PlayerInventory : MonoBehaviour
 
     PlayerStats stats;
     ThirdPersonController controller;
-    float activeReadyTime;
     int bonusMaxHealth;
     int floorDamageBonus; // Syringe: lasts until the next floor
     readonly List<GameObject> spawnedCompanions = new List<GameObject>();
 
-    public float ActiveCooldownLeft => Mathf.Max(0f, activeReadyTime - Time.time);
+    // Each active item keeps its own cooldown, so swapping items can't be used to skip it
+    readonly Dictionary<ItemData, float> activeReadyTimes = new Dictionary<ItemData, float>();
+
+    float ReadyTimeOf(ItemData item)
+    {
+        return item != null && activeReadyTimes.TryGetValue(item, out float t) ? t : 0f;
+    }
+
+    // Used by the HUD
+    public float ActiveCooldownLeft => activeItem == null ? 0f : Mathf.Max(0f, ReadyTimeOf(activeItem) - Time.time);
+    public float ActiveCooldownTotal => activeItem == null ? 0f : activeItem.cooldown;
+    public bool ActiveReady => activeItem != null && ActiveCooldownLeft <= 0f;
 
     public bool Has(ItemData item) => passives.Contains(item) || activeItem == item;
 
@@ -57,25 +66,29 @@ public class PlayerInventory : MonoBehaviour
     {
         if (activeItem == null || Keyboard.current == null) return;
 
-        if (Keyboard.current[useActiveKey].wasPressedThisFrame && Time.time >= activeReadyTime)
+        if (Keyboard.current[useActiveKey].wasPressedThisFrame && ActiveReady)
             UseActive();
     }
 
-    public void Acquire(ItemData item)
+    /// <summary>
+    /// Gives an item to the player. For an active item, it returns the active item that was
+    /// replaced (null if the player held none), so the pickup can swap with it.
+    /// </summary>
+    public ItemData Acquire(ItemData item)
     {
-        if (item == null) return;
+        if (item == null) return null;
 
         if (item.type == ItemType.Passive)
         {
             passives.Add(item);
             ApplyPassive(item);
+            return null;
         }
-        else
-        {
-            // A new active item replaces the old one
-            activeItem = item;
-            activeReadyTime = Time.time; // ready right away
-        }
+
+        // Active item: it takes the place of the one in hand
+        ItemData previous = activeItem;
+        activeItem = item;
+        return previous;
     }
 
     // --- Passive items ---
@@ -123,7 +136,7 @@ public class PlayerInventory : MonoBehaviour
             if (companion != null) Destroy(companion);
         spawnedCompanions.Clear();
 
-        Vector3 spawnPosition = (controller != null ? controller.transform : transform).position;
+        Vector3 spawnPosition = PlayerBody.position;
 
         foreach (ItemData item in passives)
         {
@@ -149,7 +162,7 @@ public class PlayerInventory : MonoBehaviour
         }
 
         // If it couldn't be used, the cooldown doesn't start
-        if (used) activeReadyTime = Time.time + activeItem.cooldown;
+        if (used) activeReadyTimes[activeItem] = Time.time + activeItem.cooldown;
     }
 
     Transform PlayerBody => controller != null ? controller.transform : transform;

@@ -35,6 +35,7 @@ public class ItemPickup : MonoBehaviour
     Vector3 iconBaseScale = Vector3.one;
     bool revealed;
     bool taken;
+    bool armed = true; // false right after a swap: the player must step off before picking up again
     float appearTimer;
 
     void Start()
@@ -49,13 +50,8 @@ public class ItemPickup : MonoBehaviour
             return;
         }
 
-        if (icon != null)
-        {
-            icon.sprite = item.icon;
-            iconBaseScale = icon.transform.localScale;
-        }
-        if (nameLabel != null) nameLabel.text = item.itemName;
-        if (descriptionLabel != null) descriptionLabel.text = item.description;
+        if (icon != null) iconBaseScale = icon.transform.localScale;
+        ShowItem();
 
         room = GetComponentInParent<RoomController>();
         if (hideUntilRoomEntered && room != null)
@@ -73,6 +69,14 @@ public class ItemPickup : MonoBehaviour
     void OnDestroy()
     {
         if (room != null) room.onPlayerEntered.RemoveListener(Reveal);
+    }
+
+    // Icon and texts of the item currently on offer
+    void ShowItem()
+    {
+        if (icon != null) icon.sprite = item.icon;
+        if (nameLabel != null) nameLabel.text = item.itemName;
+        if (descriptionLabel != null) descriptionLabel.text = item.description;
     }
 
     // Called by the room every time the player enters it
@@ -116,14 +120,30 @@ public class ItemPickup : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (taken || item == null || !revealed) return;
+        if (taken || item == null || !revealed || !armed) return;
 
         PlayerInventory inventory = other.GetComponentInParent<PlayerInventory>();
         if (inventory == null) return;
 
-        taken = true;
-        inventory.Acquire(item);
+        ItemData replaced = inventory.Acquire(item);
         onPickedUp.Invoke();
+
+        // Swap: the active item the player was holding takes this one's place
+        if (replaced != null)
+        {
+            item = replaced;
+            ShowItem();
+            armed = false;
+            return;
+        }
+
+        taken = true;
         Destroy(gameObject);
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (!armed && other.GetComponentInParent<PlayerInventory>() != null)
+            armed = true;
     }
 }

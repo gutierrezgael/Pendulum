@@ -13,6 +13,9 @@ public class Projectile : MonoBehaviour
     [Tooltip("Child object with the SpriteRenderer. It always faces the camera. Set its scale to 1 divided by the bullet size at which the art should look native (3.33 for size 0.3).")]
     public Transform sprite;
 
+    [Tooltip("Degrees per second the sprite spins (0 = none). Nice for the Engrenage Perdu.")]
+    public float spinSpeed = 0f;
+
     [Header("End of flight")]
     [Tooltip("Seconds before the maximum range during which the bullet shrinks to nothing")]
     public float shrinkDuration = 0.2f;
@@ -22,6 +25,7 @@ public class Projectile : MonoBehaviour
     float flightSpeed;
     float lifetime;
     float age;
+    float spinAngle;
     Vector3 baseScale = Vector3.one;
 
     public void Launch(Vector3 direction, float speed, float size, float range, int damage)
@@ -59,7 +63,10 @@ public class Projectile : MonoBehaviour
     {
         Camera cam = Camera.main;
         if (sprite != null && cam != null)
-            sprite.rotation = cam.transform.rotation;
+        {
+            spinAngle += spinSpeed * Time.deltaTime;
+            sprite.rotation = cam.transform.rotation * Quaternion.Euler(0f, 0f, spinAngle);
+        }
     }
 
     // Walls: a ray along the flight direction. Unlike the bullet's own collider, it never
