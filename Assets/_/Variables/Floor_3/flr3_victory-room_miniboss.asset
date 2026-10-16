@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.BoolVariable
   m_Id: b63f581be7cb4657a673e7ddfa1b85be
   Persistent: 0
-  m_InitialValue: 1
+  m_InitialValue: 0
