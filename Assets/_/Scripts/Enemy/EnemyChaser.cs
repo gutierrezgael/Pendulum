@@ -32,6 +32,7 @@ public class EnemyChaser : MonoBehaviour
 
     Rigidbody rb;
     EnemyHealth health;
+    SpawnPopIn pop;
     Health playerHealth;
     Transform player;
     float nextHitTime;
@@ -48,6 +49,7 @@ public class EnemyChaser : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         health = GetComponent<EnemyHealth>();
+        pop = GetComponent<SpawnPopIn>();
         rb.useGravity = false;
         rb.isKinematic = true; // nothing can push it; we move it ourselves
 
@@ -68,6 +70,7 @@ public class EnemyChaser : MonoBehaviour
     {
         if (!FindPlayer()) return;
         if (IsFrozen) return; // frozen: no movement, no contact damage
+        if (pop != null && pop.IsSpawning) return; // still popping in: no movement, no contact damage
         if (health.IsDead) return; // dying: it stops and can't hurt anymore
 
         Vector3 toPlayer = player.position - transform.position;

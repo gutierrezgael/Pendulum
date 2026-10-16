@@ -15,11 +15,11 @@ MonoBehaviour:
   itemName: "Pendule Fissur\xE9"
   description: '-Vitesse du Tintement
 
-    ++Dommage du Tintement'
+    +Dommage du Tintement'
   icon: {fileID: 1161212756, guid: 0b234b672d140c546b5a530ee7d7a5ba, type: 3}
   type: 0
   rarity: 0
-  damageBonus: 6
+  damageBonus: 3
   fireRateBonus: 0
   bulletSpeedBonus: -3
   bulletSizeBonus: 0

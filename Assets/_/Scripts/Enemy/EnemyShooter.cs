@@ -39,13 +39,14 @@ public class EnemyShooter : MonoBehaviour
     public float hitboxCenterY = 1f;
     public float hitboxHeight = 3f;
 
-    [Header("Sprite")]
+    [Header("Sprite (same idea as EnemyChaser)")]
     [Tooltip("Child sprite that always faces the camera (optional)")]
     public Transform sprite;
     public float spriteHeight = 1f;
     public float spriteScreenUp = 0.4f;
 
     EnemyHealth health;
+    SpawnPopIn pop;
     Transform player;
     float nextShotTime;
     bool snappedToPlayerHeight;
@@ -53,6 +54,7 @@ public class EnemyShooter : MonoBehaviour
     void Awake()
     {
         health = GetComponent<EnemyHealth>();
+        pop = GetComponent<SpawnPopIn>();
 
         if (fitHitbox)
         {
@@ -73,6 +75,7 @@ public class EnemyShooter : MonoBehaviour
 
     void Update()
     {
+        if (pop != null && pop.IsSpawning) return; // still popping in: no shots
         if (health.IsDead) return;      // dying: no more shots
         if (!FindPlayer()) return;
 

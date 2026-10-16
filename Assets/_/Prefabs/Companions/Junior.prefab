@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 1831206396002343655}
   - component: {fileID: 4539155077715585153}
   - component: {fileID: 3755810423225456232}
+  - component: {fileID: 2601922381342962593}
   m_Layer: 0
   m_Name: Junior
   m_TagString: Untagged
@@ -167,8 +168,6 @@ MonoBehaviour:
   contactDamage: 1
   hitInterval: 0.5
   hitRadius: 0.8
-  followOffset: {x: 1.5, y: 0, z: 0}
-  teleportDistance: 14
   sprite: {fileID: 457239395703162171}
   spriteHeight: 1
   spriteScreenUp: 0.4
@@ -180,3 +179,18 @@ MonoBehaviour:
   framesPerSecond: 8
   animateWhileIdle: 0
   flipWithDirection: 1
+--- !u!114 &2601922381342962593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4151163209296275464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6394e7e83ee6f924da15fd78b4c669c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnPopIn
+  duration: 0.1
+  fadeInLights: 1
+  blockActions: 1

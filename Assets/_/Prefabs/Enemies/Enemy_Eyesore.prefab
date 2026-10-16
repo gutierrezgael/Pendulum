@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 8960960407293413698}
   - component: {fileID: 6556712136079151027}
   - component: {fileID: 4960638836111352124}
+  - component: {fileID: -2222837427316498992}
   m_Layer: 0
   m_Name: Enemy_Eyesore
   m_TagString: Untagged
@@ -142,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543b7bb2a0e1efc419f6ed328b5e1922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  maxHealth: 12
+  maxHealth: 10
   spriteToFlash: {fileID: 5311672890593285243}
   flashColor: {r: 1, g: 0, b: 0, a: 1}
   flashTime: 0.08
@@ -221,7 +222,7 @@ MonoBehaviour:
   bulletRange: 25
   bulletHeight: 1
   muzzle: {fileID: 0}
-  fireRate: 0.7
+  fireRate: 3
   bulletsPerShot: 1
   spreadAngle: 30
   inaccuracy: 0
@@ -234,6 +235,21 @@ MonoBehaviour:
   sprite: {fileID: 9204623747612958477}
   spriteHeight: 1
   spriteScreenUp: 0.4
+--- !u!114 &-2222837427316498992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316541377750352626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6394e7e83ee6f924da15fd78b4c669c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnPopIn
+  duration: 0.1
+  fadeInLights: 1
+  blockActions: 1
 --- !u!1 &2537500998432994160
 GameObject:
   m_ObjectHideFlags: 0
