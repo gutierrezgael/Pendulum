@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6394e7e83ee6f924da15fd78b4c669c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnPopIn
-  duration: 0.1
+  duration: 0.7
   fadeInLights: 1
   blockActions: 1
 --- !u!1 &2537500998432994160
