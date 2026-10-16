@@ -2240,6 +2240,14 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 11400000, guid: d69348e71e2d73f46be1eebdfa4587c0, type: 2}
+    - target: {fileID: 1807912992244372390, guid: ccbc115e72f013e428f115dd34dd8315, type: 3}
+      propertyPath: bobHeight
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807912992244372390, guid: ccbc115e72f013e428f115dd34dd8315, type: 3}
+      propertyPath: appearTime
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7527136206952660555, guid: ccbc115e72f013e428f115dd34dd8315, type: 3}
       propertyPath: m_Size.x
       value: 3

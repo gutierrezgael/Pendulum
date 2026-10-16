@@ -602,7 +602,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 5039
+  m_VersionIndex: 5051
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2043,7 +2043,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3427
+  m_VersionIndex: 3439
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2567,7 +2567,7 @@ GameObject:
   - component: {fileID: 7622308372798203483}
   - component: {fileID: 6608342593405363267}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Darkness
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2677,8 +2677,8 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 0.6396769, g: 0, b: 1, a: 1}
-  m_Intensity: 15
-  m_Range: 5
+  m_Intensity: 47.7
+  m_Range: 7.75
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -5594,7 +5594,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 142
+  m_VersionIndex: 154
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -6932,7 +6932,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3427
+  m_VersionIndex: 3439
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -8660,7 +8660,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3427
+  m_VersionIndex: 3439
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -9004,6 +9004,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onRoomCleared:
+    m_PersistentCalls:
+      m_Calls: []
+  onPlayerEntered:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &8680328023953682386
@@ -10339,7 +10342,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3427
+  m_VersionIndex: 3439
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -10793,12 +10796,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3423002853192620917, guid: 8967bf79451c1844887396d59db97560, type: 3}
       propertyPath: m_VersionIndex
-      value: 41
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 4318039776853438414, guid: 8967bf79451c1844887396d59db97560, type: 3}
       propertyPath: m_Name
       value: Pedestal
       objectReference: {fileID: 0}
+    - target: {fileID: 4733746874733821043, guid: 8967bf79451c1844887396d59db97560, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733746874733821043, guid: 8967bf79451c1844887396d59db97560, type: 3}
+      propertyPath: pool
+      value: 
+      objectReference: {fileID: 11400000, guid: 263eb133f6e59c74f836f9b7e48bee28, type: 2}
     - target: {fileID: 5205134146789891945, guid: 8967bf79451c1844887396d59db97560, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.42585

@@ -1447,7 +1447,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3430
+  m_VersionIndex: 3439
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3061,7 +3061,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3430
+  m_VersionIndex: 3439
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -4789,7 +4789,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3430
+  m_VersionIndex: 3439
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -6403,7 +6403,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3430
+  m_VersionIndex: 3439
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -6859,6 +6859,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onRoomCleared:
+    m_PersistentCalls:
+      m_Calls: []
+  onPlayerEntered:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &8931953702045018786
@@ -7463,7 +7466,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 5039
+  m_VersionIndex: 5048
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []

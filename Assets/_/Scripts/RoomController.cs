@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using ColliderEventSystem;
-
 public class RoomController : MonoBehaviour
 {
     [System.Serializable]
@@ -37,6 +36,8 @@ public class RoomController : MonoBehaviour
     public UnityEvent onRoomStarted;
     [Tooltip("Open the doors, spawn a reward...")]
     public UnityEvent onRoomCleared;
+    [Tooltip("Every time the player comes in (not only the first time): items appear, etc.")]
+    public UnityEvent onPlayerEntered;
 
     // Enemies placed by hand in the room: they sleep until the room starts
     readonly List<EnemyHealth> placedEnemies = new List<EnemyHealth>();
@@ -56,7 +57,7 @@ public class RoomController : MonoBehaviour
 
         UpdateVariables();
 
-        if (!waitForPlayer) StartRoom();
+        if (!waitForPlayer) BeginRoom();
     }
 
     // --- Call this from the CES (Invoke Events) when the player enters ---
@@ -66,7 +67,14 @@ public class RoomController : MonoBehaviour
         PlayerInventory inventory = FindAnyObjectByType<PlayerInventory>();
         if (inventory != null) inventory.RespawnCompanions();
 
-        // The fight itself only starts once
+        onPlayerEntered.Invoke();
+
+        BeginRoom();
+    }
+
+    // The fight / spawning itself only happens once
+    void BeginRoom()
+    {
         if (hasStarted || isCleared) return;
         hasStarted = true;
 
