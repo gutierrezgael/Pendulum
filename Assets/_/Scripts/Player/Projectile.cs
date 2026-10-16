@@ -9,21 +9,57 @@ public class Projectile : MonoBehaviour
     [Tooltip("Goes through enemies instead of disappearing (the Engrenage Perdu)")]
     public bool pierceEnemies = false;
 
+    [Header("Sprite")]
+    [Tooltip("Child object with the SpriteRenderer. It always faces the camera. Set its scale to 1 divided by the bullet size at which the art should look native (3.33 for size 0.3).")]
+    public Transform sprite;
+
+    [Header("End of flight")]
+    [Tooltip("Seconds before the maximum range during which the bullet shrinks to nothing")]
+    public float shrinkDuration = 0.2f;
+
     int damage = 1;
     Vector3 flightDirection;
     float flightSpeed;
+    float lifetime;
+    float age;
+    Vector3 baseScale = Vector3.one;
 
     public void Launch(Vector3 direction, float speed, float size, float range, int damage)
     {
         this.damage = damage;
         flightDirection = direction.normalized;
         flightSpeed = speed;
+        lifetime = range / speed; // lifetime = distance / speed
+        age = 0f;
 
-        transform.localScale = Vector3.one * size;
+        baseScale = Vector3.one * size;
+        transform.localScale = baseScale;
 
         GetComponent<Rigidbody>().linearVelocity = direction * speed;
+    }
 
-        Destroy(gameObject, range / speed); // lifetime = distance / speed
+    void Update()
+    {
+        if (flightSpeed <= 0f) return;
+
+        age += Time.deltaTime;
+        float remaining = lifetime - age;
+        if (remaining <= 0f)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        // Shrinks to nothing just before the maximum range (the collider shrinks with it)
+        float k = shrinkDuration > 0f ? Mathf.Clamp01(remaining / shrinkDuration) : 1f;
+        transform.localScale = baseScale * k;
+    }
+
+    void LateUpdate()
+    {
+        Camera cam = Camera.main;
+        if (sprite != null && cam != null)
+            sprite.rotation = cam.transform.rotation;
     }
 
     // Walls: a ray along the flight direction. Unlike the bullet's own collider, it never
