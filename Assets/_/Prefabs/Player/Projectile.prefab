@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2250735017541281396}
   m_Layer: 0
   m_Name: Projectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   debugHits: 0
+  pierceEnemies: 0
 --- !u!65 &2250735017541281396
 BoxCollider:
   m_ObjectHideFlags: 0
