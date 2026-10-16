@@ -79,7 +79,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1343955902, guid: cef3cbdc89b5e9240ba85ddb6a100aef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -191,7 +191,7 @@ MonoBehaviour:
   debugHits: 0
   pierceEnemies: 0
   sprite: {fileID: 4613537482376012267}
-  shrinkDuration: 0.1
+  shrinkDuration: 0.2
 --- !u!65 &2250735017541281396
 BoxCollider:
   m_ObjectHideFlags: 0

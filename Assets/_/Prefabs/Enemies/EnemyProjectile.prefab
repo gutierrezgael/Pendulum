@@ -79,7 +79,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1625424937, guid: f7a65dc6ca3429c42995b01cf6588e67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -210,5 +210,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBullet
   debugHits: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 8646036792821386529}
   shrinkDuration: 0.2
