@@ -39,7 +39,7 @@ public class EnemyShooter : MonoBehaviour
     public float hitboxCenterY = 1f;
     public float hitboxHeight = 3f;
 
-    [Header("Sprite (same idea as EnemyChaser)")]
+    [Header("Sprite")]
     [Tooltip("Child sprite that always faces the camera (optional)")]
     public Transform sprite;
     public float spriteHeight = 1f;
