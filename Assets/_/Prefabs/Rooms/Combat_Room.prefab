@@ -1448,7 +1448,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3457
+  m_VersionIndex: 3460
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1688,7 +1688,7 @@ MonoBehaviour:
   valueReference: {fileID: 0}
   space: 0
   cancelPhysicsWhileMoving: 1
-  animate: 1
+  animate: 0
   duration: 0.5
   ease: 3
   customCurve:
@@ -3084,7 +3084,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3457
+  m_VersionIndex: 3460
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -3324,7 +3324,7 @@ MonoBehaviour:
   valueReference: {fileID: 0}
   space: 0
   cancelPhysicsWhileMoving: 1
-  animate: 1
+  animate: 0
   duration: 0.5
   ease: 3
   customCurve:
@@ -4901,7 +4901,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3457
+  m_VersionIndex: 3460
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -5141,7 +5141,7 @@ MonoBehaviour:
   valueReference: {fileID: 0}
   space: 0
   cancelPhysicsWhileMoving: 1
-  animate: 1
+  animate: 0
   duration: 0.5
   ease: 3
   customCurve:
@@ -6537,7 +6537,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3457
+  m_VersionIndex: 3460
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -6777,7 +6777,7 @@ MonoBehaviour:
   valueReference: {fileID: 0}
   space: 0
   cancelPhysicsWhileMoving: 1
-  animate: 1
+  animate: 0
   duration: 0.5
   ease: 3
   customCurve:
@@ -7327,7 +7327,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 5066
+  m_VersionIndex: 5069
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []

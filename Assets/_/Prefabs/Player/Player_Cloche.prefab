@@ -732,7 +732,7 @@ MonoBehaviour:
   fireRate: 1.5
   bulletSpeed: 10
   bulletSize: 0.25
-  range: 10
+  range: 7
   damage: 1
 --- !u!1 &6280101150493721418
 GameObject:
