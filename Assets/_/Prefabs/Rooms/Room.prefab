@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 2039850088754747989}
   - component: {fileID: 2479760838035485674}
   - component: {fileID: 654046554187597302}
+  - component: {fileID: 1621147781071139511}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1598,6 +1599,7 @@ MonoBehaviour:
   - {fileID: 2039850088754747989}
   - {fileID: 2479760838035485674}
   - {fileID: 654046554187597302}
+  - {fileID: 1621147781071139511}
   exitActions: []
   holdTime: 0
   afterTrigger: 3
@@ -1728,6 +1730,21 @@ MonoBehaviour:
   targetMode: 1
   target: {fileID: 0}
   operation: 1
+--- !u!114 &1621147781071139511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674005313116272958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275f95c71dc6d4da5b0b56be350fa878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.GameObjectAction
+  targetMode: 1
+  target: {fileID: 0}
+  operation: 1
 --- !u!1 &5618649699225458789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,6 +1764,7 @@ GameObject:
   - component: {fileID: 7057996975696282528}
   - component: {fileID: 3927296463505818151}
   - component: {fileID: 1442595033297675842}
+  - component: {fileID: 7740926476344690132}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -3212,6 +3230,7 @@ MonoBehaviour:
   - {fileID: 7057996975696282528}
   - {fileID: 3927296463505818151}
   - {fileID: 1442595033297675842}
+  - {fileID: 7740926476344690132}
   exitActions: []
   holdTime: 0
   afterTrigger: 3
@@ -3300,7 +3319,7 @@ MonoBehaviour:
   valueReference: {fileID: 0}
   space: 0
   cancelPhysicsWhileMoving: 1
-  animate: 0
+  animate: 1
   duration: 0.5
   ease: 3
   customCurve:
@@ -3328,6 +3347,21 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
 --- !u!114 &1442595033297675842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5618649699225458789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275f95c71dc6d4da5b0b56be350fa878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.GameObjectAction
+  targetMode: 1
+  target: {fileID: 0}
+  operation: 1
+--- !u!114 &7740926476344690132
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3475,6 +3509,7 @@ GameObject:
   - component: {fileID: 909100741600475134}
   - component: {fileID: 6920079070458647967}
   - component: {fileID: 4172358345793983631}
+  - component: {fileID: 6732930842212984069}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -4940,6 +4975,7 @@ MonoBehaviour:
   - {fileID: 909100741600475134}
   - {fileID: 6920079070458647967}
   - {fileID: 4172358345793983631}
+  - {fileID: 6732930842212984069}
   exitActions: []
   holdTime: 0
   afterTrigger: 3
@@ -5070,6 +5106,21 @@ MonoBehaviour:
   targetMode: 1
   target: {fileID: 0}
   operation: 1
+--- !u!114 &6732930842212984069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7317531921343978625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275f95c71dc6d4da5b0b56be350fa878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.GameObjectAction
+  targetMode: 1
+  target: {fileID: 0}
+  operation: 1
 --- !u!1 &7464061147377113312
 GameObject:
   m_ObjectHideFlags: 0
@@ -5089,6 +5140,7 @@ GameObject:
   - component: {fileID: 6853843711882912894}
   - component: {fileID: 4130399892293914667}
   - component: {fileID: 3495535951399289438}
+  - component: {fileID: 5512973996249854983}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -6554,6 +6606,7 @@ MonoBehaviour:
   - {fileID: 6853843711882912894}
   - {fileID: 4130399892293914667}
   - {fileID: 3495535951399289438}
+  - {fileID: 5512973996249854983}
   exitActions: []
   holdTime: 0
   afterTrigger: 3
@@ -6670,6 +6723,21 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
 --- !u!114 &3495535951399289438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7464061147377113312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275f95c71dc6d4da5b0b56be350fa878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.GameObjectAction
+  targetMode: 1
+  target: {fileID: 0}
+  operation: 1
+--- !u!114 &5512973996249854983
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7702,7 +7770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 178535627725073038, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       propertyPath: actions.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 178535627725073038, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       propertyPath: 'actions.Array.data[0]'
@@ -7712,6 +7780,10 @@ PrefabInstance:
       propertyPath: 'actions.Array.data[1]'
       value: 
       objectReference: {fileID: 6676831869160486170}
+    - target: {fileID: 178535627725073038, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
+      propertyPath: 'actions.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1750868723032288297}
     - target: {fileID: 178535627725073038, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       propertyPath: requiredTags.Array.size
       value: 1
@@ -7794,6 +7866,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7943089749138282332, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7110942055806500827}
+    - targetCorrespondingSourceObject: {fileID: 7943089749138282332, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1750868723032288297}
   m_SourcePrefab: {fileID: 100100000, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
 --- !u!4 &3613999324736522205 stripped
 Transform:
@@ -7833,6 +7908,21 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &7110942055806500827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6169686731351864320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275f95c71dc6d4da5b0b56be350fa878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.GameObjectAction
+  targetMode: 1
+  target: {fileID: 0}
+  operation: 0
+--- !u!114 &1750868723032288297
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
