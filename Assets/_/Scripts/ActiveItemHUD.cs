@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+
 public class ActiveItemHUD : MonoBehaviour
 {
     [Header("Parts")]
@@ -22,7 +23,29 @@ public class ActiveItemHUD : MonoBehaviour
     [Tooltip("{0} = frames since last use, {1} = frames needed to use it again")]
     public string format = "{0}/{1}";
 
+    [Header("Layout")]
+    [Tooltip("Puts the counter right under the box when the game starts (no manual placement needed)")]
+    public bool placeCounterUnderBox = true;
+    [Tooltip("Gap in pixels between the box and the counter")]
+    public float counterGap = 8f;
+
     PlayerInventory inventory;
+
+    void Start()
+    {
+        if (!placeCounterUnderBox || cooldownText == null) return;
+
+        // Anchored to the bottom edge of its parent (the box), hanging downward
+        RectTransform text = cooldownText.rectTransform;
+        RectTransform parent = text.parent as RectTransform;
+
+        text.anchorMin = new Vector2(0.5f, 0f);
+        text.anchorMax = new Vector2(0.5f, 0f);
+        text.pivot = new Vector2(0.5f, 1f);
+        text.anchoredPosition = new Vector2(0f, -counterGap);
+        text.sizeDelta = new Vector2(parent != null ? parent.rect.width : 100f, 30f);
+        cooldownText.alignment = TextAlignmentOptions.Center;
+    }
 
     void Update()
     {
