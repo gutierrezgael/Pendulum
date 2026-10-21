@@ -390,7 +390,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Appuyez sur Espace
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a63074272cb06a84abdf9971d16828e9, type: 2}
   m_sharedMaterial: {fileID: -1095691230345640733, guid: a63074272cb06a84abdf9971d16828e9, type: 2}
