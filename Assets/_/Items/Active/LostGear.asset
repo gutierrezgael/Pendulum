@@ -33,6 +33,6 @@ MonoBehaviour:
   radius: 0
   duration: 0
   selfDamage: 0
-  projectileSpeed: 8
+  projectileSpeed: 10
   projectileSize: 3
   projectileRange: 30

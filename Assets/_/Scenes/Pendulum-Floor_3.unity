@@ -23148,6 +23148,14 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 3490
       objectReference: {fileID: 0}
+    - target: {fileID: 3952825205682446105, guid: 1313d1e7d89ca324da94fc3cbf27b387, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 1cc5e9cf02363f84da0d5c3974364685, type: 2}
+    - target: {fileID: 3952825205682446105, guid: 1313d1e7d89ca324da94fc3cbf27b387, type: 3}
+      propertyPath: pool
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4590896121391665878, guid: 1313d1e7d89ca324da94fc3cbf27b387, type: 3}
       propertyPath: m_Mesh
       value: 
