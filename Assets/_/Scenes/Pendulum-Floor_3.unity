@@ -15097,6 +15097,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 1815735568814489207, guid: 32783924f35f0274184830aeb9999889, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815735568814489207, guid: 32783924f35f0274184830aeb9999889, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 79c75ea5de5f8ae48b874e960cf13f1d, type: 2}
+    - target: {fileID: 1815735568814489207, guid: 32783924f35f0274184830aeb9999889, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1594568538762024597, guid: 79c75ea5de5f8ae48b874e960cf13f1d, type: 2}
+    - target: {fileID: 1815735568814489207, guid: 32783924f35f0274184830aeb9999889, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982507565201271045, guid: 32783924f35f0274184830aeb9999889, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5258085820760159286, guid: 32783924f35f0274184830aeb9999889, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -15175,6 +15195,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5258085820760159286, guid: 32783924f35f0274184830aeb9999889, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8500125358158727247, guid: 32783924f35f0274184830aeb9999889, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 79c75ea5de5f8ae48b874e960cf13f1d, type: 2}
+    - target: {fileID: 8500125358158727247, guid: 32783924f35f0274184830aeb9999889, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1594568538762024597, guid: 79c75ea5de5f8ae48b874e960cf13f1d, type: 2}
+    - target: {fileID: 8500125358158727247, guid: 32783924f35f0274184830aeb9999889, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
