@@ -194,6 +194,24 @@ MonoBehaviour:
   sprite: {fileID: 4613537482376012267}
   spinSpeed: 0
   shrinkDuration: 0.05
+  pitchBySize:
+  - fromSize: 0
+    pitch: 1.3
+  - fromSize: 0.1
+    pitch: 1.15
+  - fromSize: 0.25
+    pitch: 1
+  - fromSize: 0.5
+    pitch: 0.95
+  - fromSize: 1
+    pitch: 0.85
+  - fromSize: 1.5
+    pitch: 0.8
+  - fromSize: 2
+    pitch: 0.75
+  - fromSize: 2.5
+    pitch: 0.7
+  maxSoundWait: 5
 --- !u!65 &2250735017541281396
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -227,7 +245,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 6418180475301049370, guid: 7ddc2d7838f4499498e1adcb38d7be31, type: 2}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

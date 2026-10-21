@@ -50,7 +50,7 @@ MonoBehaviour:
   variable: {fileID: 11400000, guid: e99fd6bf73161874eb2336cde59d1a66, type: 2}
   resetOnStart: 0
   text: {fileID: 0}
-  format: '{0} / {1}'
+  format: '{0} / {1} PV'
   bar: {fileID: 0}
   barSpeed: 100
   onDamaged:
