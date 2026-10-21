@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: MercurySyringe
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: Seringue de Mercure
-  description: Vous pouvez augmenter votre dommage pour ce
+  description: "Augmente votre dommage pour cet \xE9tage en \xE9change de 2 PV."
   icon: {fileID: -990161367, guid: 88791b36d9ac08248ae93113a4d8ab4d, type: 3}
   type: 1
-  rarity: 0
+  rarity: 1
   damageBonus: 0
   fireRateBonus: 0
   bulletSpeedBonus: 0

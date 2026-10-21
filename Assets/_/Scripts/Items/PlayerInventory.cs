@@ -3,6 +3,7 @@ using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+
 public class PlayerInventory : MonoBehaviour
 {
     [Header("Controls")]
@@ -77,6 +78,9 @@ public class PlayerInventory : MonoBehaviour
     public ItemData Acquire(ItemData item)
     {
         if (item == null) return null;
+
+        // Name and description appear on screen
+        ItemPopup.Show(item);
 
         if (item.type == ItemType.Passive)
         {
