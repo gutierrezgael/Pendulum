@@ -726,7 +726,6 @@ GameObject:
   - component: {fileID: 6044096972331301847}
   - component: {fileID: 3776649168251046523}
   - component: {fileID: 7369366294451698693}
-  - component: {fileID: 6215822250336367302}
   - component: {fileID: 3292959125515798215}
   - component: {fileID: 8540558381773190669}
   - component: {fileID: 269410616840809033}
@@ -2192,7 +2191,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.ColliderEvent
   conditions: []
   actions:
-  - {fileID: 6215822250336367302}
   - {fileID: 3292959125515798215}
   - {fileID: 8540558381773190669}
   - {fileID: 269410616840809033}
@@ -2207,58 +2205,6 @@ MonoBehaviour:
   requiredTags:
   - Player
   debugColor: {r: 1, g: 0.4, b: 0, a: 0.3}
---- !u!114 &6215822250336367302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048546036093117541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 873a92953f85f46ff828089ce0e82b46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.TransformAction
-  targetMode: 1
-  target: {fileID: 0}
-  modifyPosition: 1
-  position: {x: 25, y: 0, z: 0}
-  modifyRotation: 0
-  rotation: {x: 0, y: 0, z: 0}
-  modifyScale: 0
-  scale: {x: 1, y: 1, z: 1}
-  valueMode: 1
-  valueSource: 0
-  valueReference: {fileID: 0}
-  space: 0
-  cancelPhysicsWhileMoving: 1
-  animate: 1
-  duration: 0.5
-  ease: 3
-  customCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &3292959125515798215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5632,7 +5578,6 @@ GameObject:
   - component: {fileID: 8797048248423622861}
   - component: {fileID: 4192143861791044691}
   - component: {fileID: 8107007054154208363}
-  - component: {fileID: 6335219356319272946}
   - component: {fileID: 1555662825753791500}
   - component: {fileID: 717018119742684093}
   - component: {fileID: 4223843060384792602}
@@ -7098,7 +7043,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.ColliderEvent
   conditions: []
   actions:
-  - {fileID: 6335219356319272946}
   - {fileID: 1555662825753791500}
   - {fileID: 717018119742684093}
   - {fileID: 4223843060384792602}
@@ -7113,58 +7057,6 @@ MonoBehaviour:
   requiredTags:
   - Player
   debugColor: {r: 0, g: 1, b: 0.9499627, a: 0.3}
---- !u!114 &6335219356319272946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5871481689855022720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 873a92953f85f46ff828089ce0e82b46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.TransformAction
-  targetMode: 1
-  target: {fileID: 0}
-  modifyPosition: 1
-  position: {x: -25, y: 0, z: 0}
-  modifyRotation: 0
-  rotation: {x: 0, y: 0, z: 0}
-  modifyScale: 0
-  scale: {x: 1, y: 1, z: 1}
-  valueMode: 1
-  valueSource: 0
-  valueReference: {fileID: 0}
-  space: 0
-  cancelPhysicsWhileMoving: 1
-  animate: 1
-  duration: 0.5
-  ease: 3
-  customCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &1555662825753791500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7377,7 +7269,6 @@ GameObject:
   - component: {fileID: 1541194655703602979}
   - component: {fileID: 3687864371632306527}
   - component: {fileID: 6087151230265801449}
-  - component: {fileID: 3065354880108457098}
   - component: {fileID: 6341917771410483463}
   - component: {fileID: 5763175460477171522}
   - component: {fileID: 9201323026240556398}
@@ -8843,7 +8734,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.ColliderEvent
   conditions: []
   actions:
-  - {fileID: 3065354880108457098}
   - {fileID: 6341917771410483463}
   - {fileID: 5763175460477171522}
   - {fileID: 9201323026240556398}
@@ -8858,58 +8748,6 @@ MonoBehaviour:
   requiredTags:
   - Player
   debugColor: {r: 1, g: 0, b: 0.7478446, a: 0.3}
---- !u!114 &3065354880108457098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7109775490521448402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 873a92953f85f46ff828089ce0e82b46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.TransformAction
-  targetMode: 1
-  target: {fileID: 0}
-  modifyPosition: 1
-  position: {x: 0, y: 0, z: -25}
-  modifyRotation: 0
-  rotation: {x: 0, y: 0, z: 0}
-  modifyScale: 0
-  scale: {x: 1, y: 1, z: 1}
-  valueMode: 1
-  valueSource: 0
-  valueReference: {fileID: 0}
-  space: 0
-  cancelPhysicsWhileMoving: 1
-  animate: 1
-  duration: 0.5
-  ease: 3
-  customCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &6341917771410483463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9060,6 +8898,10 @@ MonoBehaviour:
   onPlayerEntered:
     m_PersistentCalls:
       m_Calls: []
+  controlCamera: 0
+  cameraFollowsPlayer: 0
+  cameraAnchor: {fileID: 0}
+  debugLogging: 1
 --- !u!1 &8680328023953682386
 GameObject:
   m_ObjectHideFlags: 0
@@ -9076,7 +8918,6 @@ GameObject:
   - component: {fileID: 4590896121391665878}
   - component: {fileID: 4743462995272710648}
   - component: {fileID: 6365181901510344841}
-  - component: {fileID: 8836658600325601272}
   - component: {fileID: 6681052551850545074}
   - component: {fileID: 359715336617165121}
   - component: {fileID: 2473437570618802499}
@@ -10542,7 +10383,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.ColliderEvent
   conditions: []
   actions:
-  - {fileID: 8836658600325601272}
   - {fileID: 6681052551850545074}
   - {fileID: 359715336617165121}
   - {fileID: 2473437570618802499}
@@ -10557,58 +10397,6 @@ MonoBehaviour:
   requiredTags:
   - Player
   debugColor: {r: 1, g: 0, b: 0.020870805, a: 1}
---- !u!114 &8836658600325601272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8680328023953682386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 873a92953f85f46ff828089ce0e82b46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.TransformAction
-  targetMode: 1
-  target: {fileID: 0}
-  modifyPosition: 1
-  position: {x: 0, y: 0, z: 25}
-  modifyRotation: 0
-  rotation: {x: 0, y: 0, z: 0}
-  modifyScale: 0
-  scale: {x: 1, y: 1, z: 1}
-  valueMode: 1
-  valueSource: 0
-  valueReference: {fileID: 0}
-  space: 0
-  cancelPhysicsWhileMoving: 1
-  animate: 1
-  duration: 0.5
-  ease: 3
-  customCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &6681052551850545074
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using ColliderEventSystem;
+
 public class RoomController : MonoBehaviour
 {
     [System.Serializable]
@@ -39,6 +40,18 @@ public class RoomController : MonoBehaviour
     [Tooltip("Every time the player comes in (not only the first time): items appear, etc.")]
     public UnityEvent onPlayerEntered;
 
+    [Header("Camera (optional)")]
+    [Tooltip("Tick to let this room control the camera when the player enters (needs the GameCamera script on the camera). Leave unticked if a CES moves the camera.")]
+    public bool controlCamera = false;
+    [Tooltip("Checked: the camera follows the player in this room (boss room, big room). Unchecked: it stays still, centered on the room.")]
+    public bool cameraFollowsPlayer = false;
+    [Tooltip("Optional: where the camera sits when it stays still. Empty = this room's own position.")]
+    public Transform cameraAnchor;
+
+    [Header("Debug")]
+    [Tooltip("Writes in the Console when the room starts and when it is cleared (untick when everything works)")]
+    public bool debugLogging = true;
+
     // Enemies placed by hand in the room: they sleep until the room starts
     readonly List<EnemyHealth> placedEnemies = new List<EnemyHealth>();
 
@@ -67,6 +80,13 @@ public class RoomController : MonoBehaviour
         PlayerInventory inventory = FindAnyObjectByType<PlayerInventory>();
         if (inventory != null) inventory.RespawnCompanions();
 
+        // This room decides what the camera does: follow the player, or stay still on the room
+        if (controlCamera && GameCamera.Instance != null)
+        {
+            if (cameraFollowsPlayer) GameCamera.Instance.StartFollowing();
+            else GameCamera.Instance.GoStatic((cameraAnchor != null ? cameraAnchor : transform).position);
+        }
+
         onPlayerEntered.Invoke();
 
         BeginRoom();
@@ -91,6 +111,8 @@ public class RoomController : MonoBehaviour
         UpdateVariables();
         onRoomStarted.Invoke();
 
+        if (debugLogging) Debug.Log($"Room '{name}' started with {enemiesAlive} enemies");
+
         // Nothing to fight (item room, empty room): cleared right away
         if (enemiesAlive == 0) Clear();
     }
@@ -114,6 +136,7 @@ public class RoomController : MonoBehaviour
     {
         if (isCleared) return;
         isCleared = true;
+        if (debugLogging) Debug.Log($"Room '{name}' cleared");
         UpdateVariables();
         onRoomCleared.Invoke();
     }

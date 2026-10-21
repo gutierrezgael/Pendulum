@@ -252,7 +252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8985711918075960210
 Transform:
   m_ObjectHideFlags: 0
@@ -747,6 +747,7 @@ GameObject:
   - component: {fileID: 5349422731432173727}
   - component: {fileID: 6003044814578538790}
   - component: {fileID: 2492784786403984538}
+  - component: {fileID: 4734228578904579283}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -835,7 +836,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6280101150493721418}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
@@ -904,6 +905,23 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &4734228578904579283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6280101150493721418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c5133d840e0be45bbe8ec6a6f9beec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameCamera
+  startFollowing: 0
+  height: 0
+  followOffset: {x: 0, y: 0}
+  followSmoothTime: 0.15
+  glideTime: 0.4
 --- !u!1 &7256619190120130669
 GameObject:
   m_ObjectHideFlags: 0
