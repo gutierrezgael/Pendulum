@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543b7bb2a0e1efc419f6ed328b5e1922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  maxHealth: 10
+  maxHealth: 8
   spriteToFlash: {fileID: 5311672890593285243}
   flashColor: {r: 1, g: 0, b: 0, a: 1}
   flashTime: 0.08
@@ -217,12 +217,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyShooter
   bulletPrefab: {fileID: 105623479857235521, guid: 1f01d6f572254e84d91bd85f2b6b9554, type: 3}
   bulletDamage: 2
-  bulletSpeed: 3
+  bulletSpeed: 4
   bulletSize: 0.4
   bulletRange: 25
   bulletHeight: 1
   muzzle: {fileID: 0}
-  fireRate: 2
+  fireRate: 1.5
   bulletsPerShot: 1
   spreadAngle: 30
   inaccuracy: 0
