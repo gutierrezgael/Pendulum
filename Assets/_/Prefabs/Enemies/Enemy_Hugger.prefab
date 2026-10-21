@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073301efae645a0479087adbbd7cfef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyChaser
-  moveSpeed: 3
+  moveSpeed: 4
   contactDamage: 2
   contactCooldown: 1
   contactRange: 1.5

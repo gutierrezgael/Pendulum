@@ -28513,6 +28513,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 6001220781820002114}
+    - target: {fileID: 8794738314565561383, guid: 58f7bf1b590be5444a597e59b1a2874b, type: 3}
+      propertyPath: animate
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 9093842200456141084, guid: 58f7bf1b590be5444a597e59b1a2874b, type: 3}
@@ -31870,6 +31874,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1656154154}
+    - target: {fileID: 3069036645747287861, guid: 58f7bf1b590be5444a597e59b1a2874b, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 254308786}
     - target: {fileID: 3318192559651814802, guid: 58f7bf1b590be5444a597e59b1a2874b, type: 3}
       propertyPath: m_Name
       value: Room_3d
