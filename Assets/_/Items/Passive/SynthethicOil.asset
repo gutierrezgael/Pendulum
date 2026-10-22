@@ -13,19 +13,15 @@ MonoBehaviour:
   m_Name: SynthethicOil
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: "Huile Synth\xE9tique"
-  description: '++Vitesse du Tintement
-
-    +Vitesse du Mouvement
-
-    --Grosseur
-    du Tintement'
+  description: "++Vitesse du Tintement\n++ Fr\xE9quence du Tintement\n--Grosseur
+    du Tintement"
   icon: {fileID: -1971087484, guid: 948e8b6dff2e8384486b294b6acfe04d, type: 3}
   type: 0
   rarity: 3
   damageBonus: 0
-  fireRateBonus: 0
+  fireRateBonus: 0.3
   bulletSpeedBonus: 6
-  bulletSizeBonus: -0.15
+  bulletSizeBonus: 0
   rangeBonus: 0
   moveSpeedBonus: 1
   maxHealthBonus: 0

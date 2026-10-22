@@ -21,7 +21,7 @@ MonoBehaviour:
     du Tintement'
   icon: {fileID: -973351166, guid: 2e88592cad70cff42ac240120c761c8b, type: 3}
   type: 0
-  rarity: 2
+  rarity: 3
   damageBonus: 6
   fireRateBonus: 0
   bulletSpeedBonus: 0

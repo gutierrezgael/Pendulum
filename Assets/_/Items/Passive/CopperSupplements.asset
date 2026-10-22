@@ -13,16 +13,14 @@ MonoBehaviour:
   m_Name: CopperSupplements
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: Anti-Rouille
-  description: '++Dommage du Tintement
-
-    +Taille du Tintement'
+  description: "++Dommage du Tintement\n+Fr\xE9quence du Tintement"
   icon: {fileID: -379519651, guid: 2da75f41cbb7556429dd773a9dc31714, type: 3}
   type: 0
-  rarity: 2
-  damageBonus: 5
-  fireRateBonus: 0
+  rarity: 3
+  damageBonus: 4
+  fireRateBonus: 0.3
   bulletSpeedBonus: 0
-  bulletSizeBonus: 0.3
+  bulletSizeBonus: 0
   rangeBonus: 0
   moveSpeedBonus: 0
   maxHealthBonus: 0
