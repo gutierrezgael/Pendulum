@@ -30,7 +30,7 @@ public class EnemyShooter : MonoBehaviour
     [Header("Detection")]
     [Tooltip("Only shoots when the player is this close. 0 = always shoots.")]
     public float aggroRange = 0f;
-    [Tooltip("Only shoots when no wall is between the enemy and the player")]
+    [Tooltip("Only shoots when no wall is between the enemy and the player (enemies, Junior and the player don't count as walls)")]
     public bool requireLineOfSight = false;
 
     [Header("Hitbox")]
@@ -55,6 +55,11 @@ public class EnemyShooter : MonoBehaviour
     {
         health = GetComponent<EnemyHealth>();
         pop = GetComponent<SpawnPopIn>();
+
+        // The bullet prefab must come from the Project window. A bullet from the scene (for example
+        // a child of this enemy) would be a stray bullet that dies with the enemy.
+        if (bulletPrefab != null && bulletPrefab.gameObject.scene.IsValid())
+            Debug.LogWarning($"{name}: 'Bullet Prefab' is an object of the scene. Drag the prefab from the Project window instead.", this);
 
         if (fitHitbox)
         {
@@ -140,16 +145,25 @@ public class EnemyShooter : MonoBehaviour
         }
     }
 
+    // Only real walls block the view: the bullets pass through enemies, Junior and the player,
+    // so none of them counts as an obstacle.
     bool CanSeePlayer(Vector3 origin)
     {
         Vector3 target = player.position + Vector3.up * bulletHeight;
         Vector3 toTarget = target - origin;
 
-        if (!Physics.Raycast(origin, toTarget.normalized, out RaycastHit hit, toTarget.magnitude,
-                             ~0, QueryTriggerInteraction.Ignore))
-            return true; // nothing in the way
+        RaycastHit[] hits = Physics.RaycastAll(origin, toTarget.normalized, toTarget.magnitude,
+                                               ~0, QueryTriggerInteraction.Ignore);
+        foreach (RaycastHit hit in hits)
+        {
+            Collider c = hit.collider;
+            if (c.GetComponentInParent<PersistentPlayer>() != null) continue;
+            if (c.GetComponentInParent<EnemyHealth>() != null) continue;
+            if (c.GetComponentInParent<Junior>() != null) continue;
 
-        return hit.collider.GetComponentInParent<PersistentPlayer>() != null;
+            return false; // a wall is in the way
+        }
+        return true;
     }
 
     bool FindPlayer()

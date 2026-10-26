@@ -92,7 +92,7 @@ public class EnemyBullet : MonoBehaviour
         if (debugHits) Debug.Log("Enemy bullet hit the player");
 
         Health health = FindAnyObjectByType<Health>();
-        if (health != null) health.Remove(damage);
+        PlayerInvincibility.Hurt(health, damage); // does nothing while Cloche is protected
 
         Destroy(gameObject);
     }

@@ -11842,7 +11842,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3102658215198660787, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1583632619}
   m_SourcePrefab: {fileID: 100100000, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
 --- !u!1 &254308786 stripped
 GameObject:
@@ -15374,15 +15377,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8164489180838189974, guid: 32783924f35f0274184830aeb9999889, type: 3}
       propertyPath: m_Color.b
-      value: 0.3490566
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8164489180838189974, guid: 32783924f35f0274184830aeb9999889, type: 3}
       propertyPath: m_Color.g
-      value: 0.12019401
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8164489180838189974, guid: 32783924f35f0274184830aeb9999889, type: 3}
       propertyPath: m_Color.r
-      value: 0.2074478
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49697,6 +49700,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8600172715791897391, guid: 58f7bf1b590be5444a597e59b1a2874b, type: 3}
   m_PrefabInstance: {fileID: 1580850808}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1583632615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3102658215198660787, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
+  m_PrefabInstance: {fileID: 254308785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1583632619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583632615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b825a7e98706f9a44bc6eb31f153651f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInvincibility
+  duration: 1
+  blink: 1
+  blinkInterval: 0.1
 --- !u!43 &1590614180
 Mesh:
   m_ObjectHideFlags: 0

@@ -94,8 +94,8 @@ public class EnemyChaser : MonoBehaviour
             if (playerHealth == null) playerHealth = FindAnyObjectByType<Health>();
             if (playerHealth != null)
             {
-                playerHealth.Remove(contactDamage);
-                nextHitTime = Time.time + contactCooldown;
+                if (PlayerInvincibility.Hurt(playerHealth, contactDamage))
+                    nextHitTime = Time.time + contactCooldown;
             }
         }
     }
