@@ -15,6 +15,9 @@ public class EnemyChaser : MonoBehaviour
     [Tooltip("Enemy stays idle until the player is this close. 0 = always chasing.")]
     public float aggroRange = 0f;
 
+    [Tooltip("Stops walking when this close to the player (a boss that keeps its distance). 0 = walks right up to her.")]
+    public float stopDistance = 0f;
+
     [Header("Hitbox")]
     [Tooltip("Automatically make the Box Collider tall so bullets can't fly over it")]
     public bool fitHitbox = true;
@@ -83,7 +86,7 @@ public class EnemyChaser : MonoBehaviour
         newPos.y = player.position.y;
 
         bool aggro = aggroRange <= 0f || dist <= aggroRange;
-        if (aggro && dist > 0.01f)
+        if (aggro && dist > Mathf.Max(0.01f, stopDistance))
             newPos += toPlayer.normalized * moveSpeed * Time.fixedDeltaTime;
 
         rb.MovePosition(newPos);
