@@ -1626,7 +1626,7 @@ MonoBehaviour:
   targetMode: 1
   target: {fileID: 0}
   modifyPosition: 1
-  position: {x: 0, y: 0, z: 11}
+  position: {x: 0, y: 0, z: 12}
   modifyRotation: 0
   rotation: {x: 0, y: 0, z: 0}
   modifyScale: 0
@@ -3225,7 +3225,7 @@ MonoBehaviour:
   targetMode: 1
   target: {fileID: 0}
   modifyPosition: 1
-  position: {x: -11, y: 0, z: 0}
+  position: {x: -12, y: 0, z: 0}
   modifyRotation: 0
   rotation: {x: 0, y: 0, z: 0}
   modifyScale: 0
@@ -5009,7 +5009,7 @@ MonoBehaviour:
   targetMode: 1
   target: {fileID: 0}
   modifyPosition: 1
-  position: {x: 0, y: 0, z: -11}
+  position: {x: 0, y: 0, z: -12}
   modifyRotation: 0
   rotation: {x: 0, y: 0, z: 0}
   modifyScale: 0
@@ -6608,7 +6608,7 @@ MonoBehaviour:
   targetMode: 1
   target: {fileID: 0}
   modifyPosition: 1
-  position: {x: 11, y: 0, z: 0}
+  position: {x: 12, y: 0, z: 0}
   modifyRotation: 0
   rotation: {x: 0, y: 0, z: 0}
   modifyScale: 0

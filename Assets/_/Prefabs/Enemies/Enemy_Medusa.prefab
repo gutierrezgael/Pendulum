@@ -532,13 +532,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyShooter
   bulletPrefab: {fileID: 105623479857235521, guid: 1f01d6f572254e84d91bd85f2b6b9554, type: 3}
   bulletDamage: 2
-  bulletSpeed: 6
+  bulletSpeed: 8
   bulletSize: 0.5
   bulletRange: 25
   bulletHeight: 1
   muzzle: {fileID: 0}
-  fireRate: 1.5
-  bulletsPerShot: 3
+  fireRate: 1.25
+  bulletsPerShot: 4
   spreadAngle: 30
   inaccuracy: 0.5
   startDelay: 1
