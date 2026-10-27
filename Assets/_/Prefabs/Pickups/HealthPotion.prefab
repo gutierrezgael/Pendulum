@@ -181,7 +181,7 @@ MonoBehaviour:
   Events:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
         m_TargetAssemblyTypeName: Health, Assembly-CSharp
         m_MethodName: Add
         m_Mode: 3

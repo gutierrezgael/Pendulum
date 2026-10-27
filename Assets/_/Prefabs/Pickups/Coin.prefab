@@ -185,7 +185,7 @@ MonoBehaviour:
   Events:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4131559174662422878, guid: 1d3d4aab5f816f2489eb518985015e64, type: 3}
         m_TargetAssemblyTypeName: Resource, Assembly-CSharp
         m_MethodName: Add
         m_Mode: 3
