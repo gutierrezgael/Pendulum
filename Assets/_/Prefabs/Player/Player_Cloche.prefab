@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 3169652399804813439}
   - component: {fileID: 4241890309650659243}
   - component: {fileID: 7401251705128603980}
+  - component: {fileID: 8435144265028640434}
   m_Layer: 0
   m_Name: Player_Cloche
   m_TagString: Untagged
@@ -333,6 +334,21 @@ MonoBehaviour:
   useActiveKey: 1
   passives: []
   activeItem: {fileID: 0}
+--- !u!114 &8435144265028640434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3102658215198660787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b825a7e98706f9a44bc6eb31f153651f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInvincibility
+  duration: 1
+  blink: 1
+  blinkInterval: 0.1
 --- !u!1 &5631282746225440523
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +361,8 @@ GameObject:
   - component: {fileID: 4346213064294401199}
   - component: {fileID: 4458182056974253312}
   - component: {fileID: 6547037000729282563}
+  - component: {fileID: 8197848922282429905}
+  - component: {fileID: 3335260274661188601}
   m_Layer: 8
   m_Name: PlayerSprite
   m_TagString: Untagged
@@ -467,6 +485,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHitFlash
   flashColor: {r: 1, g: 0.12884112, b: 0, a: 1}
   flashTime: 0.15
+--- !u!65 &8197848922282429905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5631282746225440523}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3, y: 3.75, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3335260274661188601
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5631282746225440523}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5685137110267135137
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,7 +595,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 1.8
-  m_Radius: 0.6
+  m_Radius: 1.15
   m_SlopeLimit: 45
   m_StepOffset: 0.25
   m_SkinWidth: 0.02
