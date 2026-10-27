@@ -222,7 +222,7 @@ MonoBehaviour:
   bulletRange: 25
   bulletHeight: 1
   muzzle: {fileID: 0}
-  fireRate: 1.75
+  fireRate: 1.5
   bulletsPerShot: 1
   spreadAngle: 30
   inaccuracy: 0

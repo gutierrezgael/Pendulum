@@ -46,8 +46,8 @@ Light:
   m_Color: {r: 0.39622644, g: 0, b: 0.6792453, a: 1}
   m_Intensity: 200
   m_Range: 20
-  m_SpotAngle: 31.46923
-  m_InnerSpotAngle: 8.2615385
+  m_SpotAngle: 47.665802
+  m_InnerSpotAngle: 20.54858
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
@@ -475,6 +475,7 @@ MonoBehaviour:
   contactCooldown: 1
   contactRange: 1.5
   aggroRange: 0
+  stopDistance: 0
   fitHitbox: 1
   hitboxCenterY: 1
   hitboxHeight: 3
@@ -500,8 +501,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.5, y: 3, z: 4}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 9, y: 3, z: 6.82}
+  m_Center: {x: 0, y: 1, z: -0.61}
 --- !u!114 &2981293096453617898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,10 +537,10 @@ MonoBehaviour:
   bulletRange: 25
   bulletHeight: 1
   muzzle: {fileID: 0}
-  fireRate: 1.75
-  bulletsPerShot: 1
+  fireRate: 1.5
+  bulletsPerShot: 3
   spreadAngle: 30
-  inaccuracy: 0
+  inaccuracy: 0.5
   startDelay: 1
   aggroRange: 0
   requireLineOfSight: 1
