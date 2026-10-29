@@ -32,7 +32,7 @@ MonoBehaviour:
   effectPrefab: {fileID: 0}
   radius: 0
   duration: 0
-  selfDamage: 4
+  selfDamage: 2
   projectileSpeed: 0
   projectileSize: 0
   projectileRange: 0

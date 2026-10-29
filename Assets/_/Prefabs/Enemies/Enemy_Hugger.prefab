@@ -481,7 +481,7 @@ MonoBehaviour:
   hitboxCenterY: 1
   hitboxHeight: 3
   sprite: {fileID: 2961031155669833929}
-  spriteHeight: 1
+  spriteHeight: 0.75
   spriteScreenUp: 0.4
 --- !u!65 &1880249033029055649
 BoxCollider:
