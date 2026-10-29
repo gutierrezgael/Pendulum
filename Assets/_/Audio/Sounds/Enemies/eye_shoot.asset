@@ -6,8 +6,8 @@ AudioContainerElement:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: clocheshoot_{-2802994336707006817}
-  m_AudioClip: {fileID: 8300000, guid: 7eb40bd561fdb214ba832064da7662dd, type: 3}
+  m_Name: eye_shot_{-2802994336707006817}
+  m_AudioClip: {fileID: 8300000, guid: df14a2468841da640b605f57f90f4774, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1233149941 &-1432240710731873483
@@ -16,8 +16,8 @@ AudioContainerElement:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: clocheshoot_{-1432240710731873483}
-  m_AudioClip: {fileID: 8300000, guid: 7eb40bd561fdb214ba832064da7662dd, type: 3}
+  m_Name: eye_shot_{-1432240710731873483}
+  m_AudioClip: {fileID: 8300000, guid: df14a2468841da640b605f57f90f4774, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1233149941 &-1098911416216353333
@@ -26,8 +26,8 @@ AudioContainerElement:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: clocheshoot_{-1098911416216353333}
-  m_AudioClip: {fileID: 8300000, guid: 7eb40bd561fdb214ba832064da7662dd, type: 3}
+  m_Name: eye_shot_{-1098911416216353333}
+  m_AudioClip: {fileID: 8300000, guid: df14a2468841da640b605f57f90f4774, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1233149941 &4183935663845093499
@@ -36,8 +36,8 @@ AudioContainerElement:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: clocheshoot_{4183935663845093499}
-  m_AudioClip: {fileID: 8300000, guid: 7eb40bd561fdb214ba832064da7662dd, type: 3}
+  m_Name: eye_shot_{4183935663845093499}
+  m_AudioClip: {fileID: 8300000, guid: df14a2468841da640b605f57f90f4774, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1233149941 &4724177583470332402
@@ -46,8 +46,8 @@ AudioContainerElement:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: clocheshoot_{4724177583470332402}
-  m_AudioClip: {fileID: 8300000, guid: 7eb40bd561fdb214ba832064da7662dd, type: 3}
+  m_Name: eye_shot_{4724177583470332402}
+  m_AudioClip: {fileID: 8300000, guid: df14a2468841da640b605f57f90f4774, type: 3}
   m_Volume: 0
   m_Enabled: 1
 --- !u!1307931743 &6418180475301049370
@@ -57,12 +57,12 @@ AudioRandomContainer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: eye_shoot
-  m_Volume: -10
+  m_Volume: -15.2
   m_Pitch: -24
   m_AutomaticTriggerTime: 0
   m_LoopCount: 1
   m_VolumeRandomizationRange: {x: 0, y: 0}
-  m_PitchRandomizationRange: {x: -36, y: 36.166477}
+  m_PitchRandomizationRange: {x: 0, y: 120}
   m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
   m_LoopCountRandomizationRange: {x: 0, y: 0}
   m_Elements:
