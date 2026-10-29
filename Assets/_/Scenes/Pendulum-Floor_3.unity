@@ -14029,7 +14029,7 @@ MonoBehaviour:
   space: 0
   cancelPhysicsWhileMoving: 1
   animate: 1
-  duration: 1
+  duration: 5
   ease: 3
   customCurve:
     serializedVersion: 2
@@ -14134,7 +14134,7 @@ MonoBehaviour:
   cancelPhysicsWhileMoving: 1
   animate: 1
   duration: 0.5
-  ease: 2
+  ease: 0
   customCurve:
     serializedVersion: 2
     m_Curve:
