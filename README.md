@@ -129,7 +129,7 @@ Licence    Public domain / GPL / OFL
 
 <br/>
 
-# Scripts
+## Scripts
 
   Wiki du cours d'Intéractivité Ludique par Jean-François Cartier: https://tim-montmorency.com/compendium/582-301-interactivite-ludique/
 
