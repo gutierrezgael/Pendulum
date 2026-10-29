@@ -3,7 +3,7 @@ La descente de Cloche dans la tour horloge, récemment envahis par des Parasites
 
 ## Crédits
 
-# Assets
+## Assets
 
 Asset    POLYGON - Sampler Pack - Art by Synty
 
@@ -65,7 +65,36 @@ Licence    Standard Unity Asset Store EULA, Extension Asset
 
 
 
-#Tous les Assets supplémentaires(Sprites 2D, UI, Sons, Musique) ont été faits par moi, Gaël Gutierrez
+Asset    Belanidi Serif
+
+Type    Police
+
+Auteur    HanshuYuri
+
+Source    https://www.dafont.com/belanidi-serif.font?text=30%2F30+PV&l[]=10&back=bitmap
+
+Licence    Public domain / GPL / OFL
+
+
+ 
+Asset    Belanidi Serif
+
+Type    Police
+
+Auteur    HanshuYuri
+
+Source    https://www.dafont.com/belanidi-serif.font?text=30%2F30+PV&l[]=10&back=bitmap
+
+Licence    Public domain / GPL / OFL
+
+
+
+### Sons
+
+"swoosh 5" par Makoto-AE https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-swoosh-5-359829/
+
+
+###Tous les Assets supplémentaires(Sprites 2D, UI, Sons, Musique) ont été faits par moi, Gaël Gutierrez
 
 # Scripts
 
