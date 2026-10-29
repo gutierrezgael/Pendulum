@@ -15,7 +15,7 @@ Source    https://assetstore.unity.com/packages/3d/environments/polygon-sampler-
 
 Licence    Standard Unity Asset Store EULA, Restricted Single Entity
 
-
+<br/>
 
 Asset    First Person + Third Person | Character Controllers
 
