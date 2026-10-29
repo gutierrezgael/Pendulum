@@ -89,15 +89,18 @@ Licence    Public domain / GPL / OFL
 
 
 
-### Sons
+## Sons
 
-Tous les sons additionnels ont été sourcés sur Pixabay et modifiés dans Audacity.
+###Tous les sons additionnels ont été sourcés sur Pixabay et modifiés dans Audacity.
 
 "swoosh 5" par Makoto-AE https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-swoosh-5-359829/
 
 "Triangle_Open_01" par cabled_mess (Freesound) https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-triangle-open-01-102876/
 
 "084373_Heal" par Freesound Community https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-084373-heal-36672/
+
+
+
 
 ###Tous les Assets supplémentaires(Sprites 2D, UI, Sons, Musique) ont été faits par moi, Gaël Gutierrez
 
