@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(EnemyHealth))]
 public class EnemyChaser : MonoBehaviour
@@ -17,6 +18,12 @@ public class EnemyChaser : MonoBehaviour
 
     [Tooltip("Stops walking when this close to the player (a boss that keeps its distance). 0 = walks right up to her.")]
     public float stopDistance = 0f;
+
+    [Header("Obstacles")]
+    [Tooltip("Size of the enemy for walls, pillars and doors. They block it and it slides along them. 0 = walks through everything.")]
+    public float obstacleRadius = 0.5f;
+    [Tooltip("Height of that check above the enemy's feet")]
+    public float obstacleHeight = 1f;
 
     [Header("Hitbox")]
     [Tooltip("Automatically make the Box Collider tall so bullets can't fly over it")]
@@ -87,7 +94,7 @@ public class EnemyChaser : MonoBehaviour
 
         bool aggro = aggroRange <= 0f || dist <= aggroRange;
         if (aggro && dist > Mathf.Max(0.01f, stopDistance))
-            newPos += toPlayer.normalized * moveSpeed * Time.fixedDeltaTime;
+            newPos += AvoidObstacles(newPos, toPlayer.normalized * moveSpeed * Time.fixedDeltaTime);
 
         rb.MovePosition(newPos);
 
@@ -101,6 +108,52 @@ public class EnemyChaser : MonoBehaviour
                     nextHitTime = Time.time + contactCooldown;
             }
         }
+    }
+
+    // A kinematic body ignores collisions, so we look ahead ourselves: if a wall, pillar or door
+    // is in the way, the enemy slides along it instead of walking through.
+    Vector3 AvoidObstacles(Vector3 position, Vector3 step)
+    {
+        float distance = step.magnitude;
+        if (obstacleRadius <= 0f || distance <= 0f) return step;
+
+        if (!HitsObstacle(position, step / distance, distance + 0.05f, out RaycastHit hit)) return step;
+
+        // Slide along the obstacle (and stop if that is blocked too)
+        Vector3 slide = Vector3.ProjectOnPlane(step, hit.normal);
+        slide.y = 0f;
+        float slideDistance = slide.magnitude;
+        if (slideDistance < 0.0001f) return Vector3.zero;
+        if (HitsObstacle(position, slide / slideDistance, slideDistance + 0.05f, out _)) return Vector3.zero;
+        return slide;
+    }
+
+    bool HitsObstacle(Vector3 position, Vector3 direction, float distance, out RaycastHit closest)
+    {
+        closest = default;
+        bool found = false;
+        float best = float.MaxValue;
+
+        Vector3 start = position + Vector3.up * obstacleHeight;
+        foreach (RaycastHit hit in Physics.SphereCastAll(start, obstacleRadius, direction, distance,
+                                                         ~0, QueryTriggerInteraction.Ignore))
+        {
+            if (hit.distance <= 0f) continue; // already touching at the start (the floor, say)
+
+            Collider c = hit.collider;
+            if (c.transform.IsChildOf(transform)) continue;                       // itself
+            if (c.GetComponentInParent<EnemyHealth>() != null) continue;          // other enemies
+            if (c.GetComponentInParent<PersistentPlayer>() != null) continue;     // Cloche
+            if (c.GetComponentInParent<Junior>() != null) continue;
+
+            if (hit.distance < best)
+            {
+                best = hit.distance;
+                closest = hit;
+                found = true;
+            }
+        }
+        return found;
     }
 
     void LateUpdate()

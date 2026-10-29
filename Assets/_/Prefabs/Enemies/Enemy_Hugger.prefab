@@ -475,6 +475,8 @@ MonoBehaviour:
   contactRange: 1.5
   aggroRange: 0
   stopDistance: 0
+  obstacleRadius: 1
+  obstacleHeight: 1
   fitHitbox: 1
   hitboxCenterY: 1
   hitboxHeight: 3
