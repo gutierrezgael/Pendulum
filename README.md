@@ -2,7 +2,7 @@
 # Pendulum
 La descente de Cloche dans la tour horloge, récemment envahis par des Parasites.
 
-## Crédits
+# Crédits
 
 ## Assets
 
