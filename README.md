@@ -94,23 +94,40 @@ Licence    Public domain / GPL / OFL
 ### Tous les sons additionnels ont été sourcés sur Pixabay et modifiés dans Audacity.
 
 "swoosh 5" par Makoto-AE https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-swoosh-5-359829/
+
 <br/>
+
 "Triangle_Open_01" par cabled_mess (Freesound) https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-triangle-open-01-102876/
+
 <br/>
+
 "084373_Heal" par Freesound Community https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-084373-heal-36672/
+
 <br/>
+
 "Hammer Steel Impact" par Universfield https://pixabay.com/fr/sound-effects/hammer-steel-impact-454390/
+
 <br/>
+
 "Flesh Impact" par u_xjrmmgxfru https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-flesh-impact-266316/
+
 <br/>
+
 "Rotate Movement Whoosh 1" par floraphonic https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-rotate-movement-whoosh-1-185335/
+
 <br/>
+
 "Cartoon Explosion" par Universfield https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-cartoon-explosion-567193/
+
 <br/>
+
 "Bass Reverse Rembobinage" par ALEXIS_GAMING_CAM https://pixabay.com/fr/sound-effects/musical-bass-reverse-rembobinage-351495/
+
 <br/>
+
 "Clock Ticking Sound Effect" par Pixabay https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-clock-ticking-sound-effect-240503/
 
+<br/>
 # Scripts
 
   Wiki du cours d'Intéractivité Ludique par Jean-François Cartier: https://tim-montmorency.com/compendium/582-301-interactivite-ludique/
