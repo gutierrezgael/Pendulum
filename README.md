@@ -91,7 +91,7 @@ Licence    Public domain / GPL / OFL
 
 ## Sons
 
-###Tous les sons additionnels ont été sourcés sur Pixabay et modifiés dans Audacity.
+### Tous les sons additionnels ont été sourcés sur Pixabay et modifiés dans Audacity.
 
 "swoosh 5" par Makoto-AE https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-swoosh-5-359829/
 
@@ -99,10 +99,12 @@ Licence    Public domain / GPL / OFL
 
 "084373_Heal" par Freesound Community https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-084373-heal-36672/
 
+"Hammer Steel Impact" par Universfield https://pixabay.com/fr/sound-effects/hammer-steel-impact-454390/
+
+"Flesh Impact" par u_xjrmmgxfru https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-flesh-impact-266316/
 
 
 
-###Tous les Assets supplémentaires(Sprites 2D, UI, Sons, Musique) ont été faits par moi, Gaël Gutierrez
 
 # Scripts
 
@@ -110,4 +112,4 @@ Licence    Public domain / GPL / OFL
 
   Claude par Anthropic: https://claude.com/fr
 
-  
+ ### Tous les Assets supplémentaires(Sprites 2D, UI, Sons, Musique) ont été faits par moi, Gaël Gutierrez
