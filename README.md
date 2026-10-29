@@ -93,6 +93,10 @@ Licence    Public domain / GPL / OFL
 
 "swoosh 5" par Makoto-AE https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-swoosh-5-359829/
 
+"Triangle_Open_01" par cabled_mess (Freesound) https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-triangle-open-01-102876/
+
+
+
 
 ###Tous les Assets supplémentaires(Sprites 2D, UI, Sons, Musique) ont été faits par moi, Gaël Gutierrez
 
