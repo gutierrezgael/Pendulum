@@ -58,11 +58,11 @@ AudioRandomContainer:
   m_PrefabAsset: {fileID: 0}
   m_Name: eye_shoot
   m_Volume: -11
-  m_Pitch: -24
+  m_Pitch: -180
   m_AutomaticTriggerTime: 0
   m_LoopCount: 1
   m_VolumeRandomizationRange: {x: 0, y: 0}
-  m_PitchRandomizationRange: {x: -48, y: 0}
+  m_PitchRandomizationRange: {x: -240, y: 0}
   m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
   m_LoopCountRandomizationRange: {x: 0, y: 0}
   m_Elements:
@@ -75,7 +75,7 @@ AudioRandomContainer:
   m_PlaybackMode: 2
   m_TriggerMode: 1
   m_AutomaticTriggerMode: 1
-  m_LoopMode: 1
+  m_LoopMode: 0
   m_VolumeRandomizationEnabled: 0
   m_PitchRandomizationEnabled: 1
   m_AutomaticTriggerTimeRandomizationEnabled: 0
