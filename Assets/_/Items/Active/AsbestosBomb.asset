@@ -27,9 +27,9 @@ MonoBehaviour:
   healOnPickup: 0
   companionPrefab: {fileID: 0}
   activeEffect: 3
-  cooldown: 30
+  cooldown: 25
   effectAmount: 20
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 3736422287066526392, guid: af56c92fe78ac2f4ca099a5679019906, type: 3}
   radius: 4
   duration: 0
   selfDamage: 0

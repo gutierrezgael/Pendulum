@@ -29,7 +29,7 @@ MonoBehaviour:
   activeEffect: 5
   cooldown: 5
   effectAmount: 2
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 7281651855500282073, guid: 8df01f4e56eb7f149a7badf470b2c667, type: 3}
   radius: 0
   duration: 0
   selfDamage: 2

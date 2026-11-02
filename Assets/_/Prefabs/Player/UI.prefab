@@ -347,7 +347,7 @@ MonoBehaviour:
   cooldownOverlay: {fileID: 6598303886887747515}
   cooldownText: {fileID: 1815735568814489207}
   keyText: {fileID: 0}
-  framesPerSecond: 0.6
+  framesPerSecond: 1.2
   format: '{0}/{1}'
   placeCounterUnderBox: 1
   counterGap: 8

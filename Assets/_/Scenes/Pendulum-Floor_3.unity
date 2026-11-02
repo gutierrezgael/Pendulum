@@ -21434,12 +21434,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4318039776853438414, guid: 8967bf79451c1844887396d59db97560, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4733746874733821043, guid: 8967bf79451c1844887396d59db97560, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 11400000, guid: 30c97f7a4d2079643a8685922913d60d, type: 2}
+      objectReference: {fileID: 11400000, guid: 202ab6d2be840794da4bb2b18ce19b34, type: 2}
     - target: {fileID: 4733746874733821043, guid: 8967bf79451c1844887396d59db97560, type: 3}
       propertyPath: pool
       value: 
