@@ -30,8 +30,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2981228561839339}
+  - {fileID: 4721223424705365575}
   - {fileID: 4684908718668945374}
+  - {fileID: 167983727417425988}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!212 &1864312089021395062
@@ -94,7 +95,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!1 &6145799716713724493
+--- !u!1 &4410222068200838269
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,23 +103,54 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2981228561839339}
-  - component: {fileID: 6522104502351502066}
-  - component: {fileID: 1605106726081780063}
+  - component: {fileID: 167983727417425988}
   m_Layer: 0
-  m_Name: Pickup_Item
+  m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2981228561839339
+--- !u!4 &167983727417425988
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6145799716713724493}
+  m_GameObject: {fileID: 4410222068200838269}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 0.99999976, z: 0.99999976}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3350776905996627252}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4725044237513372506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4721223424705365575}
+  - component: {fileID: 1892208989363797373}
+  - component: {fileID: 217438392032539145}
+  m_Layer: 0
+  m_Name: Pickup_Coin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4721223424705365575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4725044237513372506}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 27.89, y: -25, z: 0.7000046}
@@ -127,18 +159,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3350776905996627252}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &6522104502351502066
+--- !u!82 &1892208989363797373
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6145799716713724493}
+  m_GameObject: {fileID: 4725044237513372506}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -1746151378466389563, guid: 1bf3f0c84d2130b48bb74c385c84253a, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: c2bdd3da4239817498afcdc2f309c99c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.448
   m_Pitch: 1
@@ -224,19 +256,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1605106726081780063
+--- !u!114 &217438392032539145
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6145799716713724493}
+  m_GameObject: {fileID: 4725044237513372506}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d19ff296a9a8a8843ba895ce70be4648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JouerSon
-  source: {fileID: 6522104502351502066}
+  source: {fileID: 1892208989363797373}
   clip: {fileID: 8300000, guid: c2bdd3da4239817498afcdc2f309c99c, type: 3}
 --- !u!1001 &5226152466936804191
 PrefabInstance:
@@ -363,7 +395,7 @@ MonoBehaviour:
   Events:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1605106726081780063}
+      - m_Target: {fileID: 217438392032539145}
         m_TargetAssemblyTypeName: JouerSon, Assembly-CSharp
         m_MethodName: JouerParDessus
         m_Mode: 1
