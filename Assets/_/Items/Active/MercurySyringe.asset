@@ -36,3 +36,5 @@ MonoBehaviour:
   projectileSpeed: 0
   projectileSize: 0
   projectileRange: 0
+  useSoundPrefab: {fileID: 7983456680105958294, guid: 79e57d21d9ef6ff4a884b16f7a94c9cb, type: 3}
+  useSoundClip: {fileID: 0}

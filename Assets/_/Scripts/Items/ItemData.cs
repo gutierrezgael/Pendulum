@@ -58,4 +58,10 @@ public class ItemData : ScriptableObject
     public float projectileSpeed = 10f;
     public float projectileSize = 2f;
     public float projectileRange = 25f;
+
+    [Header("Sound when used (optional, active items)")]
+    [Tooltip("A prefab with an Audio Source set to Play On Awake (for example one using an Audio Random Container). It is created each time the item is used.")]
+    public GameObject useSoundPrefab;
+    [Tooltip("Or a simple audio clip")]
+    public AudioClip useSoundClip;
 }

@@ -9,6 +9,10 @@ public class PlayerInventory : MonoBehaviour
     [Header("Controls")]
     public Key useActiveKey = Key.E;
 
+    [Header("Sounds")]
+    [Tooltip("Seconds a 'use sound' prefab lives before it is removed (longer than the longest sound)")]
+    public float useSoundLifetime = 5f;
+
     [Header("Owned items (read only)")]
     public List<ItemData> passives = new List<ItemData>();
     public ItemData activeItem;
@@ -166,7 +170,22 @@ public class PlayerInventory : MonoBehaviour
         }
 
         // If it couldn't be used, the cooldown doesn't start
-        if (used) activeReadyTimes[activeItem] = Time.time + activeItem.cooldown;
+        if (used)
+        {
+            activeReadyTimes[activeItem] = Time.time + activeItem.cooldown;
+            PlayUseSound(activeItem);
+        }
+    }
+
+    // The sound of the active item (only when it really was used)
+    void PlayUseSound(ItemData item)
+    {
+        if (item.useSoundPrefab != null)
+            Destroy(Instantiate(item.useSoundPrefab, PlayerBody.position, Quaternion.identity), useSoundLifetime);
+
+        if (item.useSoundClip != null)
+            AudioSource.PlayClipAtPoint(item.useSoundClip,
+                Camera.main != null ? Camera.main.transform.position : PlayerBody.position);
     }
 
     Transform PlayerBody => controller != null ? controller.transform : transform;
