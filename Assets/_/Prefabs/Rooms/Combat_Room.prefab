@@ -7932,13 +7932,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5670534610590174707}
     - target: {fileID: 2663405310373289924, guid: af420c02164afe1469804b7711fcea98, type: 3}
+      propertyPath: drops.Array.data[0].weight
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2663405310373289924, guid: af420c02164afe1469804b7711fcea98, type: 3}
       propertyPath: drops.Array.data[1].prefab
       value: 
       objectReference: {fileID: 6963986394562964514}
     - target: {fileID: 2663405310373289924, guid: af420c02164afe1469804b7711fcea98, type: 3}
+      propertyPath: drops.Array.data[1].weight
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2663405310373289924, guid: af420c02164afe1469804b7711fcea98, type: 3}
       propertyPath: drops.Array.data[2].prefab
       value: 
       objectReference: {fileID: 9044630597055588510}
+    - target: {fileID: 2663405310373289924, guid: af420c02164afe1469804b7711fcea98, type: 3}
+      propertyPath: drops.Array.data[2].weight
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 3599428280951893403, guid: af420c02164afe1469804b7711fcea98, type: 3}
       propertyPath: afterTrigger
       value: 1
