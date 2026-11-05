@@ -690,7 +690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyShooter
   bulletPrefab: {fileID: 105623479857235521, guid: 1f01d6f572254e84d91bd85f2b6b9554, type: 3}
-  bulletDamage: 2
+  bulletDamage: 4
   bulletSpeed: 8
   bulletSize: 0.5
   bulletRange: 25
