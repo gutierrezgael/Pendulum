@@ -3211,7 +3211,7 @@ MonoBehaviour:
   valueReference: {fileID: 0}
   space: 0
   cancelPhysicsWhileMoving: 1
-  animate: 1
+  animate: 0
   duration: 0.5
   ease: 3
   customCurve:

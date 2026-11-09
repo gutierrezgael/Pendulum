@@ -241,7 +241,7 @@ MonoBehaviour:
   inaccuracy: 0
   startDelay: 1
   aggroRange: 0
-  requireLineOfSight: 1
+  requireLineOfSight: 0
   fitHitbox: 1
   hitboxCenterY: 1
   hitboxHeight: 3
