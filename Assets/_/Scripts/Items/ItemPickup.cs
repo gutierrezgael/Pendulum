@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+
 public class ItemPickup : MonoBehaviour
 {
     [Header("What it offers")]
@@ -31,6 +32,13 @@ public class ItemPickup : MonoBehaviour
     [Header("Events")]
     public UnityEvent onPickedUp;
 
+    // Items currently lying on a pedestal of this floor: other pedestals never pick them
+    static readonly System.Collections.Generic.HashSet<ItemData> onOffer =
+        new System.Collections.Generic.HashSet<ItemData>();
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    static void ResetOnOffer() => onOffer.Clear();
+
     RoomController room;
     Vector3 iconBaseScale = Vector3.one;
     bool revealed;
@@ -41,7 +49,7 @@ public class ItemPickup : MonoBehaviour
     void Start()
     {
         if (item == null && pool != null)
-            item = pool.PickRandom(FindAnyObjectByType<PlayerInventory>());
+            item = pool.PickRandom(FindAnyObjectByType<PlayerInventory>(), onOffer);
 
         // Nothing to offer (empty pool, or everything already owned)
         if (item == null)
@@ -49,6 +57,8 @@ public class ItemPickup : MonoBehaviour
             gameObject.SetActive(false);
             return;
         }
+
+        onOffer.Add(item); // reserved: no other pedestal will offer it
 
         if (icon != null) iconBaseScale = icon.transform.localScale;
         ShowItem();
@@ -68,6 +78,8 @@ public class ItemPickup : MonoBehaviour
 
     void OnDestroy()
     {
+        if (item != null) onOffer.Remove(item);
+
         if (room != null) room.onPlayerEntered.RemoveListener(Reveal);
     }
 
@@ -131,7 +143,9 @@ public class ItemPickup : MonoBehaviour
         // Swap: the active item the player was holding takes this one's place
         if (replaced != null)
         {
+            onOffer.Remove(item);
             item = replaced;
+            onOffer.Add(item);
             ShowItem();
             armed = false;
             return;
