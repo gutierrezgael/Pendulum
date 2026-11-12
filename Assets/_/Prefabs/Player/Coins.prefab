@@ -47,8 +47,8 @@ MonoBehaviour:
   startValue: 0
   maximum: 0
   goal: 0
-  variable: {fileID: 0}
-  resetOnStart: 1
+  variable: {fileID: 11400000, guid: 966e06768faf6cb44ad56e24abeea3c1, type: 2}
+  resetOnStart: 0
   text: {fileID: 0}
   format: "\xD7 {0}"
   onAdded:

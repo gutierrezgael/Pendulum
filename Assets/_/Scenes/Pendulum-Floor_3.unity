@@ -7849,17 +7849,6 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
---- !u!114 &110992930 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3861461617905494334, guid: 32783924f35f0274184830aeb9999889, type: 3}
-  m_PrefabInstance: {fileID: 313345379}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &113064180
 GameObject:
   m_ObjectHideFlags: 0
@@ -23794,6 +23783,17 @@ MonoBehaviour:
   intThreshold: 0
   boolThreshold: 1
   stringThreshold: 
+--- !u!114 &710243600 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4094260210462155352, guid: 32783924f35f0274184830aeb9999889, type: 3}
+  m_PrefabInstance: {fileID: 313345379}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!43 &716711062
 Mesh:
   m_ObjectHideFlags: 0
@@ -66328,15 +66328,7 @@ PrefabInstance:
     - target: {fileID: 4131559174662422878, guid: 1d3d4aab5f816f2489eb518985015e64, type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 110992930}
-    - target: {fileID: 4131559174662422878, guid: 1d3d4aab5f816f2489eb518985015e64, type: 3}
-      propertyPath: variable
-      value: 
-      objectReference: {fileID: 11400000, guid: 966e06768faf6cb44ad56e24abeea3c1, type: 2}
-    - target: {fileID: 4131559174662422878, guid: 1d3d4aab5f816f2489eb518985015e64, type: 3}
-      propertyPath: resetOnStart
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 710243600}
     - target: {fileID: 7547962203480876658, guid: 1d3d4aab5f816f2489eb518985015e64, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.04146
