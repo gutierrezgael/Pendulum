@@ -629,7 +629,7 @@ MonoBehaviour:
   moveSpeed: 5
   contactDamage: 4
   contactCooldown: 1
-  contactRange: 1.5
+  contactRange: 2
   aggroRange: 0
   stopDistance: 0
   obstacleRadius: 1
