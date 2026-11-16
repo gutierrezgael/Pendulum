@@ -3,7 +3,6 @@ using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-
 public class PlayerInventory : MonoBehaviour
 {
     [Header("Controls")]

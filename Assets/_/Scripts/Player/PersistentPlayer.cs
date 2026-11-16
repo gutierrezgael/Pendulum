@@ -1,10 +1,14 @@
 using StarterAssets;
+using UnityEngine.InputSystem;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[DefaultExecutionOrder(-10000)] // runs before the other scripts of the new floor, so the old player is gone first
 public class PersistentPlayer : MonoBehaviour
 {
     public static PersistentPlayer Instance { get; private set; }
+
+    bool tookOver;
 
     void Awake()
     {
@@ -12,6 +16,7 @@ public class PersistentPlayer : MonoBehaviour
         if (Instance != null && Instance != this)
         {
             PersistentPlayer previous = Instance;
+            tookOver = true;
             TransferFrom(previous);
 
             // Removed on the spot (its OnDestroy clears Instance), so there are never two players
@@ -21,6 +26,19 @@ public class PersistentPlayer : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
         SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    // Once everything has started: pair the new player's input with the keyboard and mouse again.
+    // (The previous player held them until it was removed, so the new one could end up with no input.)
+    void Start()
+    {
+        if (!tookOver) return;
+
+        foreach (PlayerInput input in GetComponentsInChildren<PlayerInput>(true))
+        {
+            input.enabled = false;
+            input.enabled = true;
+        }
     }
 
     void OnDestroy()
