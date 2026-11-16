@@ -134,6 +134,14 @@ Licence    Public domain / GPL / OFL
 
 <br/>
 
+"Goopy Slime 2" par floraphonic https://pixabay.com/sound-effects/film-special-effects-goopy-slime-2-219775/
+
+<br/>
+
+"Slime Splatter 1" par floraphonic https://pixabay.com/sound-effects/film-special-effects-slime-splatter-1-220262/
+
+<br/>
+
 ## Scripts
 
   Wiki du cours d'Intéractivité Ludique par Jean-François Cartier: https://tim-montmorency.com/compendium/582-301-interactivite-ludique/
