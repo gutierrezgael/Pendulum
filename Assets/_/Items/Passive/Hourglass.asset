@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Hourglass
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: Sablier
-  description: "-Vitesse du Tintement\n+Fr\xE9quence du Tintement"
+  description: "+Vitesse du Mouvement\n-Fr\xE9quence du Tintement"
   icon: {fileID: -529918379, guid: 3c1b0018814b5464595b2a3432a84e67, type: 3}
   type: 0
-  rarity: 0
+  rarity: 2
   damageBonus: 0
-  fireRateBonus: 0.3
+  fireRateBonus: -0.15
   bulletSpeedBonus: 0
   bulletSizeBonus: 0
   rangeBonus: 0
-  moveSpeedBonus: 0
+  moveSpeedBonus: 2
   maxHealthBonus: 0
   healOnPickup: 0
   companionPrefab: {fileID: 0}
@@ -36,3 +36,5 @@ MonoBehaviour:
   projectileSpeed: 10
   projectileSize: 2
   projectileRange: 25
+  useSoundPrefab: {fileID: 0}
+  useSoundClip: {fileID: 0}
