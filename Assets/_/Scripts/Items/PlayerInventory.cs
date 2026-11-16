@@ -38,6 +38,19 @@ public class PlayerInventory : MonoBehaviour
 
     public bool Has(ItemData item) => passives.Contains(item) || activeItem == item;
 
+    // A new floor's player takes over from the previous one: same items, same cooldowns
+    public void CopyFrom(PlayerInventory other)
+    {
+        passives = new List<ItemData>(other.passives);
+        activeItem = other.activeItem;
+        bonusMaxHealth = other.bonusMaxHealth;
+        floorDamageBonus = other.floorDamageBonus;
+
+        activeReadyTimes.Clear();
+        foreach (KeyValuePair<ItemData, float> pair in other.activeReadyTimes)
+            activeReadyTimes[pair.Key] = pair.Value;
+    }
+
     void Awake()
     {
         stats = GetComponentInChildren<PlayerStats>(true);
@@ -105,16 +118,16 @@ public class PlayerInventory : MonoBehaviour
     {
         if (stats != null)
         {
-            stats.damage = Mathf.Max(1, stats.damage + item.damageBonus);
-            stats.fireRate = Mathf.Max(0.5f, stats.fireRate + item.fireRateBonus);
-            stats.bulletSpeed = Mathf.Max(3f, stats.bulletSpeed + item.bulletSpeedBonus);
-            stats.bulletSize = Mathf.Max(0.1f, stats.bulletSize + item.bulletSizeBonus);
-            stats.range = Mathf.Max(3f, stats.range + item.rangeBonus);
+            stats.damage      = Mathf.Max(1,    stats.damage + item.damageBonus);
+            stats.fireRate    = Mathf.Max(0.5f, stats.fireRate + item.fireRateBonus);
+            stats.bulletSpeed = Mathf.Max(3f,   stats.bulletSpeed + item.bulletSpeedBonus);
+            stats.bulletSize  = Mathf.Max(0.1f, stats.bulletSize + item.bulletSizeBonus);
+            stats.range       = Mathf.Max(3f,   stats.range + item.rangeBonus);
         }
 
         if (controller != null && item.moveSpeedBonus != 0f)
         {
-            controller.MoveSpeed = Mathf.Max(1f, controller.MoveSpeed + item.moveSpeedBonus);
+            controller.MoveSpeed   = Mathf.Max(1f, controller.MoveSpeed + item.moveSpeedBonus);
             controller.SprintSpeed = Mathf.Max(1f, controller.SprintSpeed + item.moveSpeedBonus);
         }
 
@@ -161,12 +174,12 @@ public class PlayerInventory : MonoBehaviour
 
         switch (activeItem.activeEffect)
         {
-            case ActiveEffect.Heal: used = DoHeal(); break;
-            case ActiveEffect.Blast: used = DoBlast(); break;
-            case ActiveEffect.Gear: used = DoGear(); break;
-            case ActiveEffect.AreaDamage: used = DoAreaDamage(); break;
-            case ActiveEffect.FreezeEnemies: used = DoFreeze(); break;
-            case ActiveEffect.Syringe: used = DoSyringe(); break;
+            case ActiveEffect.Heal:          used = DoHeal();         break;
+            case ActiveEffect.Blast:         used = DoBlast();        break;
+            case ActiveEffect.Gear:          used = DoGear();         break;
+            case ActiveEffect.AreaDamage:    used = DoAreaDamage();   break;
+            case ActiveEffect.FreezeEnemies: used = DoFreeze();       break;
+            case ActiveEffect.Syringe:       used = DoSyringe();      break;
         }
 
         // If it couldn't be used, the cooldown doesn't start
@@ -254,7 +267,7 @@ public class PlayerInventory : MonoBehaviour
         return true;
     }
 
-    // Chronomètre Cassé: every enemy stops for a few seconds
+    // ChronomÃ¨tre CassÃ©: every enemy stops for a few seconds
     bool DoFreeze()
     {
         EnemyChaser.FreezeAll(activeItem.duration);
