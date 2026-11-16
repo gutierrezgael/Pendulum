@@ -7093,7 +7093,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.047846217, g: 0.13207549, b: 0.005731563, a: 0.6039216}
+  m_Color: {r: 0.107822426, g: 0.21509439, b: 0.049918115, a: 0.6039216}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11605,7 +11605,7 @@ GameObject:
   - component: {fileID: 1846439990}
   - component: {fileID: 1846439989}
   m_Layer: 5
-  m_Name: logo
+  m_Name: shopguy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11620,14 +11620,14 @@ RectTransform:
   m_GameObject: {fileID: 1846439987}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.101285, y: 8.101285, z: 8.101285}
+  m_LocalScale: {x: 5.9823127, y: 5.9823127, z: 5.9823127}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 753254719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 495, y: -82}
+  m_AnchoredPosition: {x: 620, y: 200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1846439989
