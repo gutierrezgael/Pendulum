@@ -10329,7 +10329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae75340aa14e324bad82c6990ded1ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  nomDeLaScene: Pendulum_Shop
+  nomDeLaScene: Pendulum-Shop
 --- !u!4 &1439745288
 Transform:
   m_ObjectHideFlags: 0
