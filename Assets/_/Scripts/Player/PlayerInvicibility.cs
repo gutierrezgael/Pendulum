@@ -20,12 +20,7 @@ public class PlayerInvincibility : MonoBehaviour
 
     void Awake()
     {
-        // A second copy of the player (new floor) is destroyed by PersistentPlayer: ignore it
-        if (Instance != null && Instance != this)
-        {
-            enabled = false;
-            return;
-        }
+        // The newest player wins: a new floor's player takes over from the previous one
 
         Instance = this;
         registered = true;
