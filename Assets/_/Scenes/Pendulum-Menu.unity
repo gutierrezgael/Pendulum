@@ -4694,8 +4694,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 263955710}
-  - {fileID: 820165955}
   - {fileID: 1896557109}
+  - {fileID: 820165955}
   - {fileID: 1979757707}
   - {fileID: 929780133}
   - {fileID: 1289754725}
@@ -4855,6 +4855,7 @@ GameObject:
   - component: {fileID: 820165955}
   - component: {fileID: 820165957}
   - component: {fileID: 820165956}
+  - component: {fileID: 820165958}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4983,6 +4984,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820165954}
   m_CullTransparentMesh: 1
+--- !u!114 &820165958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820165954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: -1.02, y: -0.81}
+  m_UseGraphicAlpha: 0
 --- !u!43 &849889521
 Mesh:
   m_ObjectHideFlags: 0
@@ -6958,7 +6974,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6039216}
+  m_Color: {r: 0.2679245, g: 0.20632827, b: 0.0823994, a: 0.34901962}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6977,7 +6993,7 @@ RectTransform:
   m_GameObject: {fileID: 956188839}
   m_LocalRotation: {x: 0.52767783, y: -0, z: -0, w: 0.8494446}
   m_LocalPosition: {x: 0, y: 0, z: 573}
-  m_LocalScale: {x: 1799.5842, y: 1799.5842, z: 1799.5842}
+  m_LocalScale: {x: 3734.1375, y: 3734.1375, z: 3734.1375}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -10284,6 +10300,51 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &1439745286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1439745288}
+  - component: {fileID: 1439745287}
+  m_Layer: 0
+  m_Name: Shop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1439745287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439745286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ae75340aa14e324bad82c6990ded1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  nomDeLaScene: Pendulum_Shop
+--- !u!4 &1439745288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439745286}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.24915, y: 0, z: 140.43637}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1475032993
 Mesh:
   m_ObjectHideFlags: 0
@@ -11169,6 +11230,7 @@ GameObject:
   - component: {fileID: 1896557109}
   - component: {fileID: 1896557111}
   - component: {fileID: 1896557110}
+  - component: {fileID: 1896557112}
   m_Layer: 5
   m_Name: logo
   m_TagString: Untagged
@@ -11233,6 +11295,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896557108}
   m_CullTransparentMesh: 1
+--- !u!114 &1896557112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896557108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Shadow
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: -1.11, y: -0.38}
+  m_UseGraphicAlpha: 0
 --- !u!1001 &1937527938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11385,7 +11462,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 628146391}
+      - m_Target: {fileID: 1439745287}
         m_TargetAssemblyTypeName: MonScript, Assembly-CSharp
         m_MethodName: ChangeLaScene
         m_Mode: 1
@@ -11793,6 +11870,7 @@ SceneRoots:
   - {fileID: 753254719}
   - {fileID: 1680550777}
   - {fileID: 628146392}
+  - {fileID: 1439745288}
   - {fileID: 449747169}
   - {fileID: 1705204303}
   - {fileID: 992836105}
