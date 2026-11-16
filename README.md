@@ -130,6 +130,10 @@ Licence    Public domain / GPL / OFL
 
 <br/>
 
+"Cash Register Fake" par CapsLok (Freesound) https://pixabay.com/sound-effects/film-special-effects-cash-register-fake-88639/
+
+<br/>
+
 ## Scripts
 
   Wiki du cours d'Intéractivité Ludique par Jean-François Cartier: https://tim-montmorency.com/compendium/582-301-interactivite-ludique/
