@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c85f4b3b8116c449afb64e8e9683afa, type: 3}
   m_Name: Upgrade_FireRate
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  level: {fileID: 11400000, guid: 17dd27dbf32eb8341a0d593f6f1d2de2, type: 2}
+  level: {fileID: 11400000, guid: 50e540061edfca448a6e70e826959dc8, type: 2}
   stat: 1
   amountPerLevel: 0.3
   prices: 050000000a0000000f0000000f000000

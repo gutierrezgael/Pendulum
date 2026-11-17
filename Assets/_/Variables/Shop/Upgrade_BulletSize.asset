@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b19a3fc3bb9540dc803161f015a4f79, type: 3}
-  m_Name: Upgrade_Item_6
+  m_Name: Upgrade_BulletSize
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.IntVariable
-  m_Id: 002ab867b2864b25a11a5f2dd70fe6d0
+  m_Id: c5c709ba4571465ea488b782eb95d4ee
   Persistent: 1
   m_InitialValue: 0

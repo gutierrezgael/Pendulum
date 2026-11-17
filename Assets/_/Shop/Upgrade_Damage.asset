@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c85f4b3b8116c449afb64e8e9683afa, type: 3}
   m_Name: Upgrade_Damage
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  level: {fileID: 11400000, guid: e04b6a88ad4bcbb408e366b5c25d4836, type: 2}
+  level: {fileID: 11400000, guid: 4e3f58c7c998efc4b978818c0bee3c2b, type: 2}
   stat: 0
   amountPerLevel: 1.5
   prices: 050000000a0000000f0000000f000000
