@@ -525,6 +525,7 @@ GameObject:
   - component: {fileID: 1239091368989721843}
   - component: {fileID: 1880249033029055649}
   - component: {fileID: 2981293096453617898}
+  - component: {fileID: 3616424664634267435}
   m_Layer: 0
   m_Name: Enemy_Mimicked
   m_TagString: Untagged
@@ -676,3 +677,35 @@ MonoBehaviour:
   duration: 1.25
   fadeInLights: 1
   blockActions: 1
+--- !u!114 &3616424664634267435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7146122988675453299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f502562f98a6f74b8379f0167ec9f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyShooter
+  bulletPrefab: {fileID: 105623479857235521, guid: 1f01d6f572254e84d91bd85f2b6b9554, type: 3}
+  bulletDamage: 6
+  bulletSpeed: 20
+  bulletSize: 0.75
+  bulletRange: 25
+  bulletHeight: 1
+  muzzle: {fileID: 0}
+  fireRate: 0.35
+  bulletsPerShot: 12
+  spreadAngle: 270
+  inaccuracy: 0.5
+  startDelay: 1
+  aggroRange: 0
+  requireLineOfSight: 0
+  fitHitbox: 1
+  hitboxCenterY: 1
+  hitboxHeight: 3
+  sprite: {fileID: 0}
+  spriteHeight: 1
+  spriteScreenUp: 0.4
