@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 4241890309650659243}
   - component: {fileID: 7401251705128603980}
   - component: {fileID: 8435144265028640434}
+  - component: {fileID: 2969238874727926296}
   m_Layer: 0
   m_Name: Player_Cloche
   m_TagString: Untagged
@@ -332,6 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInventory
   useActiveKey: 1
+  useSoundLifetime: 5
   passives: []
   activeItem: {fileID: 0}
 --- !u!114 &8435144265028640434
@@ -349,6 +351,20 @@ MonoBehaviour:
   duration: 1
   blink: 1
   blinkInterval: 0.1
+--- !u!114 &2969238874727926296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3102658215198660787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d5d052142cc2445b6f131f7a7c6268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerUpgrades
+  upgrades:
+  - {fileID: 11400000, guid: c30daf3e53e42934b9d12ada0c3e95ec, type: 2}
 --- !u!1 &5631282746225440523
 GameObject:
   m_ObjectHideFlags: 0

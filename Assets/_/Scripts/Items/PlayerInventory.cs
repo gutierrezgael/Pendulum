@@ -3,6 +3,7 @@ using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+
 public class PlayerInventory : MonoBehaviour
 {
     [Header("Controls")]
@@ -36,6 +37,12 @@ public class PlayerInventory : MonoBehaviour
     public bool ActiveReady => activeItem != null && ActiveCooldownLeft <= 0f;
 
     public bool Has(ItemData item) => passives.Contains(item) || activeItem == item;
+
+    // Permanent shop upgrade: raises the maximum HP of every floor of the run
+    public void AddMaxHealthBonus(int amount)
+    {
+        bonusMaxHealth += amount;
+    }
 
     // A new floor's player takes over from the previous one: same items, same cooldowns
     public void CopyFrom(PlayerInventory other)

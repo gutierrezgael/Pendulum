@@ -25,6 +25,13 @@ public class PersistentPlayer : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        // A brand new run (not a new floor taking over): the permanent upgrades bought in the shop apply
+        if (!tookOver)
+        {
+            PlayerUpgrades permanent = GetComponent<PlayerUpgrades>();
+            if (permanent != null) permanent.Apply();
+        }
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
