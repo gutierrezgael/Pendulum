@@ -109844,7 +109844,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &3628378986415351722
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -111719,7 +111719,7 @@ MonoBehaviour:
   stringThreshold: 
 --- !u!114 &5104879077201870548
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -111730,8 +111730,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
   operation: 0
-  sceneAsset: {fileID: 102900000, guid: ab14c14d832e946498fdd74ca84c9481, type: 3}
-  scenePath: Assets/_/Scenes/Pendulum-Floor_2.unity
+  sceneAsset: {fileID: 102900000, guid: 615e7fc089e336b4ab086d31ea949c10, type: 3}
+  scenePath: Assets/_/Scenes/Pendulum-Floor_1.unity
   additive: 0
 --- !u!33 &5294085344609999558
 MeshFilter:
@@ -111743,7 +111743,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &5439592145055432007
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -111754,8 +111754,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
   operation: 2
-  sceneAsset: {fileID: 102900000, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
-  scenePath: Assets/_/Scenes/Pendulum-Floor_3.unity
+  sceneAsset: {fileID: 102900000, guid: ab14c14d832e946498fdd74ca84c9481, type: 3}
+  scenePath: Assets/_/Scenes/Pendulum-Floor_2.unity
   additive: 0
 --- !u!1001 &5504995582493814678
 PrefabInstance:
@@ -112150,7 +112150,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &6572265672029008039
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -112205,7 +112205,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &6856898355991684261
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
