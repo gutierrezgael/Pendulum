@@ -15,4 +15,4 @@ MonoBehaviour:
   level: {fileID: 11400000, guid: e04b6a88ad4bcbb408e366b5c25d4836, type: 2}
   stat: 0
   amountPerLevel: 1
-  prices: 05000000050000000a0000000a000000
+  prices: 050000000a0000000f0000000f000000
