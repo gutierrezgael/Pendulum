@@ -696,9 +696,9 @@ MonoBehaviour:
   bulletRange: 25
   bulletHeight: 1
   muzzle: {fileID: 0}
-  fireRate: 1
+  fireRate: 1.5
   bulletsPerShot: 4
-  spreadAngle: 30
+  spreadAngle: 45
   inaccuracy: 0.5
   startDelay: 1
   aggroRange: 0
