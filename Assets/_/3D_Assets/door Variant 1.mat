@@ -43,7 +43,8 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _DstBlendAlpha: 10
     m_Colors:
     - _BaseColor: {r: 0.4792453, g: 0.46041098, b: 0.43674618, a: 1}
     - _Color: {r: 0.4792453, g: 0.4604109, b: 0.43674612, a: 1}

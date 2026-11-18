@@ -375,7 +375,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 576940050, guid: 7987b2771e951a14cb813784a1585e65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -397,7 +397,7 @@ Transform:
   m_GameObject: {fileID: 40496628}
   serializedVersion: 2
   m_LocalRotation: {x: 0.43008557, y: 0.26857725, z: -0.06853352, w: 0.8591833}
-  m_LocalPosition: {x: 648, y: 861, z: 185}
+  m_LocalPosition: {x: 648, y: 872.8, z: 189}
   m_LocalScale: {x: 84.544624, y: 84.544624, z: 84.544624}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -10174,9 +10174,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8342143054134181767, guid: 5618571256bd45f488a3ec529b39c5cc, type: 3}
+      propertyPath: m_Volume
+      value: 0.502
+      objectReference: {fileID: 0}
+    - target: {fileID: 8342143054134181767, guid: 5618571256bd45f488a3ec529b39c5cc, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 1caf9c039e5bd0547bbef0beaacd222a, type: 3}
+      objectReference: {fileID: 8300000, guid: a90cad1cd0b4f3d459f565f861bd7880, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10407,7 +10411,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2088116680}
         m_TargetAssemblyTypeName: MonScript, Assembly-CSharp
         m_MethodName: ChangeLaScene
         m_Mode: 1
@@ -11113,7 +11117,7 @@ GameObject:
   - component: {fileID: 2088116681}
   - component: {fileID: 2088116680}
   m_Layer: 0
-  m_Name: Credits
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11131,7 +11135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ae75340aa14e324bad82c6990ded1ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  nomDeLaScene: Pendulum-Credits
+  nomDeLaScene: Pendulum-Menu
 --- !u!4 &2088116681
 Transform:
   m_ObjectHideFlags: 0
@@ -11161,19 +11165,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7849452750260120073, guid: ee4df121c1e86444ba76d5b0b5876dc1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2490.2847
+      value: 2261.4026
       objectReference: {fileID: 0}
     - target: {fileID: 7849452750260120073, guid: ee4df121c1e86444ba76d5b0b5876dc1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2490.2847
+      value: 2261.4026
       objectReference: {fileID: 0}
     - target: {fileID: 7849452750260120073, guid: ee4df121c1e86444ba76d5b0b5876dc1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2490.2847
+      value: 2261.4026
       objectReference: {fileID: 0}
     - target: {fileID: 7849452750260120073, guid: ee4df121c1e86444ba76d5b0b5876dc1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 594
+      value: 604
       objectReference: {fileID: 0}
     - target: {fileID: 7849452750260120073, guid: ee4df121c1e86444ba76d5b0b5876dc1, type: 3}
       propertyPath: m_LocalPosition.y
