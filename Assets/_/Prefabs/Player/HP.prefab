@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bfa6ba72f0e3f7478b92616d3cc03e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  maximum: 10
-  startValue: 10
+  maximum: 15
+  startValue: 15
   variable: {fileID: 11400000, guid: e99fd6bf73161874eb2336cde59d1a66, type: 2}
   resetOnStart: 0
   text: {fileID: 0}

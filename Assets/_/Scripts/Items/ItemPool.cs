@@ -7,10 +7,10 @@ public class ItemPool : ScriptableObject
     public List<ItemData> items = new List<ItemData>();
 
     [Header("Odds per rarity (higher = more often, 0 = never)")]
-    public float commonWeight = 60f;
-    public float uncommonWeight = 25f;
-    public float rareWeight = 12f;
-    public float legendaryWeight = 3f;
+    public float commonWeight = 35f;
+    public float uncommonWeight = 30f;
+    public float rareWeight = 20f;
+    public float legendaryWeight = 15f;
 
     const int RarityCount = 4;
 

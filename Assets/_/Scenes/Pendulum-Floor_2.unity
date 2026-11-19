@@ -59985,6 +59985,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Helicopter
       objectReference: {fileID: 0}
+    - target: {fileID: 7146122988675453299, guid: 625eef542ea74154e821e78d8b6a36c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8389606794450955989, guid: 625eef542ea74154e821e78d8b6a36c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12
@@ -75933,6 +75937,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Helicopter (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7146122988675453299, guid: 625eef542ea74154e821e78d8b6a36c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8389606794450955989, guid: 625eef542ea74154e821e78d8b6a36c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12
@@ -90134,6 +90142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Helicopter (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7146122988675453299, guid: 625eef542ea74154e821e78d8b6a36c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8389606794450955989, guid: 625eef542ea74154e821e78d8b6a36c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12
@@ -90195,6 +90207,10 @@ PrefabInstance:
     - target: {fileID: 7146122988675453299, guid: 625eef542ea74154e821e78d8b6a36c2, type: 3}
       propertyPath: m_Name
       value: Enemy_Helicopter (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7146122988675453299, guid: 625eef542ea74154e821e78d8b6a36c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8389606794450955989, guid: 625eef542ea74154e821e78d8b6a36c2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -113293,6 +113309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Column_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3713104444964819695, guid: 2f3f7d4927009b84583c02fcbc509217, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4031902545585363002, guid: 2f3f7d4927009b84583c02fcbc509217, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -114078,6 +114098,10 @@ PrefabInstance:
     - target: {fileID: 3713104444964819695, guid: 2f3f7d4927009b84583c02fcbc509217, type: 3}
       propertyPath: m_Name
       value: Column_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713104444964819695, guid: 2f3f7d4927009b84583c02fcbc509217, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4031902545585363002, guid: 2f3f7d4927009b84583c02fcbc509217, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
