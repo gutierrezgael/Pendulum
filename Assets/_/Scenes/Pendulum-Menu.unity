@@ -10891,8 +10891,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1431304827}
-        m_TargetAssemblyTypeName: QuitGame, Assembly-CSharp
-        m_MethodName: Quit
+        m_TargetAssemblyTypeName: OkBye, Assembly-CSharp
+        m_MethodName: Quitter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

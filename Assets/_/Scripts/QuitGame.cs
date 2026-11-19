@@ -1,12 +1,20 @@
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
-public class QuitGame : MonoBehaviour
+public class OkBye : MonoBehaviour
 {
-    public void Quit()
+    void Awake()
+    {
+        if (Application.platform == RuntimePlatform.WebGLPlayer)
+            gameObject.SetActive(false);
+    }
+
+    public void Quitter()
     {
 #if UNITY_EDITOR
-        // Application.Quit() does nothing in the editor, so stop Play mode instead.
-        UnityEditor.EditorApplication.isPlaying = false;
+        EditorApplication.isPlaying = false;
 #else
         Application.Quit();
 #endif
