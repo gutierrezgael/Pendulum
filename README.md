@@ -77,18 +77,6 @@ Source    https://www.dafont.com/belanidi-serif.font?text=30%2F30+PV&l[]=10&back
 Licence    Public domain / GPL / OFL
 
 <br/>
- 
-Asset    Belanidi Serif
-
-Type    Police
-
-Auteur    HanshuYuri
-
-Source    https://www.dafont.com/belanidi-serif.font?text=30%2F30+PV&l[]=10&back=bitmap
-
-Licence    Public domain / GPL / OFL
-
-<br/>
 
 ## Sons
 
