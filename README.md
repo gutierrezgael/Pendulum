@@ -77,18 +77,6 @@ Source    https://www.dafont.com/belanidi-serif.font?text=30%2F30+PV&l[]=10&back
 Licence    Public domain / GPL / OFL
 
 <br/>
- 
-Asset    Belanidi Serif
-
-Type    Police
-
-Auteur    HanshuYuri
-
-Source    https://www.dafont.com/belanidi-serif.font?text=30%2F30+PV&l[]=10&back=bitmap
-
-Licence    Public domain / GPL / OFL
-
-<br/>
 
 ## Sons
 
@@ -145,7 +133,13 @@ Licence    Public domain / GPL / OFL
 ## Scripts
 
   Wiki du cours d'Intéractivité Ludique par Jean-François Cartier: https://tim-montmorency.com/compendium/582-301-interactivite-ludique/
-
-  Claude par Anthropic: https://claude.com/fr
-
+  
+  Forum Unity Discussions
+  
+  Stack Overflow:
+  
+  Reddit
+  
+  Claude par Anthropic
+  
  ### Tous les Assets supplémentaires(Sprites 2D, UI, Sons, Musique) ont été faits par moi, Gaël Gutierrez
