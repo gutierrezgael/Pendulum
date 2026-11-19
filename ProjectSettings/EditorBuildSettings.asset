@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/_/Scenes/Pendulum-Credits.unity
     guid: c863fb96b960c794ca3ee4e03c81470c
   - enabled: 1
+    path: Assets/_/Scenes/Pendulum-Tutorial.unity
+    guid: ef5410f3e1e589e44a10b61fbd022d74
+  - enabled: 1
     path: Assets/_/Scenes/Pendulum-Floor_3.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
