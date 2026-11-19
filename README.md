@@ -145,7 +145,13 @@ Licence    Public domain / GPL / OFL
 ## Scripts
 
   Wiki du cours d'Intéractivité Ludique par Jean-François Cartier: https://tim-montmorency.com/compendium/582-301-interactivite-ludique/
-
-  Claude par Anthropic: https://claude.com/fr
-
+  
+  Forum Unity Discussions
+  
+  Stack Overflow:
+  
+  Reddit
+  
+  Claude par Anthropic
+  
  ### Tous les Assets supplémentaires(Sprites 2D, UI, Sons, Musique) ont été faits par moi, Gaël Gutierrez
