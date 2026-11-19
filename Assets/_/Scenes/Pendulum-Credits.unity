@@ -534,7 +534,7 @@ Transform:
   m_GameObject: {fileID: 40496628}
   serializedVersion: 2
   m_LocalRotation: {x: 0.43008557, y: 0.26857725, z: -0.06853352, w: 0.8591833}
-  m_LocalPosition: {x: 648, y: 872.8, z: 189}
+  m_LocalPosition: {x: 753, y: 666.01996, z: 190}
   m_LocalScale: {x: 84.544624, y: 84.544624, z: 84.544624}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2822,7 +2822,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Scripts
+  m_text: Autres
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 79c75ea5de5f8ae48b874e960cf13f1d, type: 2}
   m_sharedMaterial: {fileID: 1594568538762024597, guid: 79c75ea5de5f8ae48b874e960cf13f1d, type: 2}
@@ -6029,7 +6029,7 @@ GameObject:
   - component: {fileID: 289658544}
   - component: {fileID: 289658543}
   m_Layer: 5
-  m_Name: Scripts (1)
+  m_Name: Autres
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11347,7 +11347,7 @@ GameObject:
   - component: {fileID: 1022166021}
   - component: {fileID: 1022166020}
   m_Layer: 5
-  m_Name: Shop_Base_Ui
+  m_Name: Credits_Base_Ui
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19456,7 +19456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -580, y: -445}
+  m_AnchoredPosition: {x: -484, y: -462}
   m_SizeDelta: {x: 236.5, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576656487
@@ -23455,15 +23455,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7849452750260120073, guid: ee4df121c1e86444ba76d5b0b5876dc1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 604
+      value: 709
       objectReference: {fileID: 0}
     - target: {fileID: 7849452750260120073, guid: ee4df121c1e86444ba76d5b0b5876dc1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 719.78
+      value: 513
       objectReference: {fileID: 0}
     - target: {fileID: 7849452750260120073, guid: ee4df121c1e86444ba76d5b0b5876dc1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 155
+      value: 156
       objectReference: {fileID: 0}
     - target: {fileID: 7849452750260120073, guid: ee4df121c1e86444ba76d5b0b5876dc1, type: 3}
       propertyPath: m_LocalRotation.w
