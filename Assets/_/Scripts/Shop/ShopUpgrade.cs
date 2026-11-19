@@ -4,11 +4,6 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using ColliderEventSystem;
 
-/// <summary>
-/// One line of the shop: sells a permanent upgrade for coins. Put it on the item's panel
-/// (Item_1) and hook the Buy button's On Click to ShopUpgrade.Buy.
-/// It also shows the progress bar (one sprite per level) and the next price.
-/// </summary>
 public class ShopUpgrade : MonoBehaviour
 {
     [Header("What it sells")]
@@ -52,7 +47,6 @@ public class ShopUpgrade : MonoBehaviour
             buyButton.interactable = !upgrade.IsMaxed;
     }
 
-    // Hook this to the Buy button's On Click
     public void Buy()
     {
         if (upgrade == null || upgrade.level == null || coins == null) return;

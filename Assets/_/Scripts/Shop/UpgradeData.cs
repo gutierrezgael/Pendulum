@@ -3,10 +3,7 @@ using ColliderEventSystem;
 
 public enum UpgradeStat { Damage, FireRate, BulletSpeed, BulletSize, Range, MoveSpeed, MaxHealth }
 
-/// <summary>
-/// One permanent upgrade of the shop = one asset. Create with: Assets > Create > Pendulum > Permanent Upgrade.
-/// The shop sells it (ShopUpgrade) and every new run starts with it applied (PlayerUpgrades).
-/// </summary>
+
 [CreateAssetMenu(menuName = "Pendulum/Permanent Upgrade", fileName = "NewUpgrade")]
 public class UpgradeData : ScriptableObject
 {

@@ -1,11 +1,6 @@
 using StarterAssets;
 using UnityEngine;
 
-/// <summary>
-/// Put it on the player root (Player_Cloche, next to PersistentPlayer) and drag in every
-/// permanent upgrade of the shop. When a new run starts, the levels bought in the shop
-/// are added to Cloche's stats.
-/// </summary>
 public class PlayerUpgrades : MonoBehaviour
 {
     [Tooltip("Every permanent upgrade of the shop")]
