@@ -706,6 +706,6 @@ MonoBehaviour:
   fitHitbox: 1
   hitboxCenterY: 1
   hitboxHeight: 3
-  sprite: {fileID: 0}
+  sprite: {fileID: 2961031155669833929}
   spriteHeight: 1
   spriteScreenUp: 0.4
