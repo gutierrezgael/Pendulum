@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 2961031155669833929}
   - component: {fileID: 3958641428651548858}
   m_Layer: 0
-  m_Name: Enemy_Medusa
+  m_Name: Enemy_Mimiicked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
