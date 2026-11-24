@@ -208,7 +208,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2032223843, guid: 017ff7aa7c3db504ca6183d0688d7255, type: 3}
+  m_Sprite: {fileID: -640776380, guid: f620cc04e503ad8419aabbcc0334260a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 2981293096453617898}
   - component: {fileID: 1813776238382002661}
   m_Layer: 0
-  m_Name: Enemy_Medusaling
+  m_Name: Enemy_Medusa_Mutated
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
