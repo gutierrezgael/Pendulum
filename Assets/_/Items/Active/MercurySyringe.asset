@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MercurySyringe
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: Seringue de Mercure
-  description: "Augmente votre dommage pour cet \xE9tage en \xE9change de 2 PV."
+  description: "Augmente votre dommage pour cet \xE9tage en \xE9change de 3 PV."
   icon: {fileID: -990161367, guid: 88791b36d9ac08248ae93113a4d8ab4d, type: 3}
   type: 1
   rarity: 1
@@ -28,11 +28,11 @@ MonoBehaviour:
   companionPrefab: {fileID: 0}
   activeEffect: 5
   cooldown: 5
-  effectAmount: 2
+  effectAmount: 1
   effectPrefab: {fileID: 7281651855500282073, guid: 8df01f4e56eb7f149a7badf470b2c667, type: 3}
   radius: 0
   duration: 0
-  selfDamage: 2
+  selfDamage: 3
   projectileSpeed: 0
   projectileSize: 0
   projectileRange: 0

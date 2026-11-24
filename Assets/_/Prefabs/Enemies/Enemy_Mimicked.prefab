@@ -633,7 +633,7 @@ MonoBehaviour:
   contactRange: 4
   aggroRange: 0
   stopDistance: 0
-  obstacleRadius: 1
+  obstacleRadius: 2
   obstacleHeight: 1
   fitHitbox: 1
   hitboxCenterY: 1

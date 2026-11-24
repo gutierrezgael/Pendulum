@@ -627,13 +627,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073301efae645a0479087adbbd7cfef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyChaser
-  moveSpeed: 4
+  moveSpeed: 1
   contactDamage: 7
   contactCooldown: 1
   contactRange: 4
   aggroRange: 0
   stopDistance: 0
-  obstacleRadius: 1
+  obstacleRadius: 4.5
   obstacleHeight: 1
   fitHitbox: 1
   hitboxCenterY: 1
@@ -692,7 +692,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 105623479857235521, guid: 1f01d6f572254e84d91bd85f2b6b9554, type: 3}
   bulletDamage: 5
   bulletSpeed: 15
-  bulletSize: 2
+  bulletSize: 1.75
   bulletRange: 30
   bulletHeight: 1
   muzzle: {fileID: 0}
@@ -705,7 +705,7 @@ MonoBehaviour:
   requireLineOfSight: 0
   fitHitbox: 1
   hitboxCenterY: 1
-  hitboxHeight: 3
+  hitboxHeight: 4
   sprite: {fileID: 0}
   spriteHeight: 1
   spriteScreenUp: 0.4
