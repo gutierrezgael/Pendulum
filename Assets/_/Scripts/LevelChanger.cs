@@ -1,16 +1,24 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class LevelChanger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    public Animator animator;
+
+    private int levelToLoad;
+
+
+    
+    public void FadeToLevel (int levelIndex)
+
     {
-        
+        levelToLoad = levelIndex;
+        animator.SetTrigger("FadeOut");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnFadeComplete ()
     {
-        
+        SceneManager.LoadScene(levelToLoad);
     }
+
 }
