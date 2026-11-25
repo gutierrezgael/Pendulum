@@ -855,6 +855,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedestal (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4318039776853438414, guid: 8967bf79451c1844887396d59db97560, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5205134146789891945, guid: 8967bf79451c1844887396d59db97560, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.6
@@ -70983,6 +70987,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedestal (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4318039776853438414, guid: 8967bf79451c1844887396d59db97560, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5205134146789891945, guid: 8967bf79451c1844887396d59db97560, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.6
@@ -131126,6 +131134,10 @@ PrefabInstance:
     - target: {fileID: 4318039776853438414, guid: 8967bf79451c1844887396d59db97560, type: 3}
       propertyPath: m_Name
       value: Pedestal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318039776853438414, guid: 8967bf79451c1844887396d59db97560, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5205134146789891945, guid: 8967bf79451c1844887396d59db97560, type: 3}
       propertyPath: m_LocalPosition.x
@@ -236075,6 +236087,10 @@ PrefabInstance:
     - target: {fileID: 4318039776853438414, guid: 8967bf79451c1844887396d59db97560, type: 3}
       propertyPath: m_Name
       value: Pedestal (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318039776853438414, guid: 8967bf79451c1844887396d59db97560, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5205134146789891945, guid: 8967bf79451c1844887396d59db97560, type: 3}
       propertyPath: m_LocalPosition.x
