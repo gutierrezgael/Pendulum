@@ -51810,6 +51810,14 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 985263989}
+    - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 620441225}
+    - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FadeToLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 5645941292659791109, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
       propertyPath: m_Name
       value: HP
