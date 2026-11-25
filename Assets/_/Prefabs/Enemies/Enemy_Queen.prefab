@@ -46,8 +46,8 @@ Light:
   m_Color: {r: 0.58694667, g: 0.21226418, b: 1, a: 1}
   m_Intensity: 271.9
   m_Range: 20
-  m_SpotAngle: 78.855194
-  m_InnerSpotAngle: 39.53343
+  m_SpotAngle: 107.16217
+  m_InnerSpotAngle: 70.33808
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
@@ -705,7 +705,7 @@ MonoBehaviour:
   requireLineOfSight: 0
   fitHitbox: 1
   hitboxCenterY: 1
-  hitboxHeight: 6
+  hitboxHeight: 8
   sprite: {fileID: 0}
   spriteHeight: 1
   spriteScreenUp: 0.4
