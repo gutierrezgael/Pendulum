@@ -51811,12 +51811,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 985263989}
     - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+      propertyPath: resetOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
       propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 620441225}
+      objectReference: {fileID: 1662465925}
     - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
       propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: FadeToLevel
+      value: ShowGameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameOverHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5645941292659791109, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
       propertyPath: m_Name
@@ -51867,6 +51879,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+--- !u!114 &1662465925 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7186969906496544292, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+  m_PrefabInstance: {fileID: 1662465924}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0bed91d30fd928429511d444477e413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameOverHandler
 --- !u!43 &1683115528
 Mesh:
   m_ObjectHideFlags: 0

@@ -35011,17 +35011,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
---- !u!114 &1128001635 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4669592811425272007, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
-  m_PrefabInstance: {fileID: 1128001634}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39fa0e5ac2eb1394580261f5a3fec46e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!114 &1130722660 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4734228578904579283, guid: 07ae297ab679d014aa7b6f477e021cdd, type: 3}
@@ -46964,12 +46953,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 985263989}
     - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
       propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1128001635}
+      objectReference: {fileID: 1662465925}
     - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
       propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: FadeToLevel
+      value: ShowGameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameOverHandler, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5645941292659791109, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
       propertyPath: m_Name
@@ -47020,6 +47017,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+--- !u!114 &1662465925 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7186969906496544292, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+  m_PrefabInstance: {fileID: 1662465924}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0bed91d30fd928429511d444477e413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameOverHandler
 --- !u!1001 &1691207092
 PrefabInstance:
   m_ObjectHideFlags: 0

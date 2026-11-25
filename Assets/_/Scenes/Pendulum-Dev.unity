@@ -6746,6 +6746,10 @@ MonoBehaviour:
   onPlayerEntered:
     m_PersistentCalls:
       m_Calls: []
+  controlCamera: 0
+  cameraFollowsPlayer: 0
+  cameraAnchor: {fileID: 0}
+  debugLogging: 1
 --- !u!43 &639198095
 Mesh:
   m_ObjectHideFlags: 0
@@ -21935,6 +21939,10 @@ MonoBehaviour:
   onPlayerEntered:
     m_PersistentCalls:
       m_Calls: []
+  controlCamera: 0
+  cameraFollowsPlayer: 0
+  cameraAnchor: {fileID: 0}
+  debugLogging: 1
 --- !u!1001 &1669232628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24416,6 +24424,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1028520821063980632, guid: ccbc115e72f013e428f115dd34dd8315, type: 3}
   m_PrefabInstance: {fileID: 1852453862}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1860928512 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7186969906496544292, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+  m_PrefabInstance: {fileID: 128871254185401334}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0bed91d30fd928429511d444477e413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameOverHandler
 --- !u!1 &1927774506
 GameObject:
   m_ObjectHideFlags: 0
@@ -28539,6 +28558,22 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 1263664547}
+    - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1860928512}
+    - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowGameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107031308646247248, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameOverHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5645941292659791109, guid: 18c95447a0645bf4abf9cf3498d4044b, type: 3}
       propertyPath: m_Name
       value: HP
