@@ -29744,6 +29744,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 685433705554519169, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
   m_PrefabInstance: {fileID: 3111286293291019144}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &507845326
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507845324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 021ce74f3be9f4ad2aeff0a1bcb9115d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.InvokeEventsAction
+  Events:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2024624419}
+        m_TargetAssemblyTypeName: LevelChanger, Assembly-CSharp
+        m_MethodName: FadeToLevel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!43 &535930186
 Mesh:
   m_ObjectHideFlags: 0
@@ -97987,6 +98014,74 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1001 &2024624418
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8175423256761210748, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
+      propertyPath: m_Name
+      value: LevelChanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319666731381816915, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319666731381816915, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319666731381816915, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319666731381816915, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319666731381816915, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319666731381816915, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319666731381816915, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319666731381816915, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319666731381816915, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319666731381816915, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
+--- !u!114 &2024624419 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4669592811425272007, guid: b3c2e65940ab08548a171c5f4b1137fa, type: 3}
+  m_PrefabInstance: {fileID: 2024624418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39fa0e5ac2eb1394580261f5a3fec46e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &2028844694
 GameObject:
   m_ObjectHideFlags: 0
@@ -110603,16 +110698,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 178535627725073038, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       propertyPath: actions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 178535627725073038, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       propertyPath: 'actions.Array.data[0]'
       value: 
-      objectReference: {fileID: 5439592145055432007}
+      objectReference: {fileID: 507845326}
     - target: {fileID: 178535627725073038, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       propertyPath: 'actions.Array.data[1]'
       value: 
-      objectReference: {fileID: 5104879077201870548}
+      objectReference: {fileID: 0}
     - target: {fileID: 178535627725073038, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       propertyPath: requiredTags.Array.size
       value: 1
@@ -110683,10 +110778,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7943089749138282332, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5104879077201870548}
-    - targetCorrespondingSourceObject: {fileID: 7943089749138282332, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5439592145055432007}
+      addedObject: {fileID: 507845326}
   m_SourcePrefab: {fileID: 100100000, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
 --- !u!23 &3283461264082634327
 MeshRenderer:
@@ -112674,22 +112766,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5104879077201870548
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507845324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2539c1a705247439d369eeb7e6769c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
-  operation: 0
-  sceneAsset: {fileID: 102900000, guid: 615e7fc089e336b4ab086d31ea949c10, type: 3}
-  scenePath: Assets/_/Scenes/Pendulum-Floor_1.unity
-  additive: 0
 --- !u!33 &5294085344609999558
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -112698,22 +112774,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87914863520377569}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &5439592145055432007
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507845324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2539c1a705247439d369eeb7e6769c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
-  operation: 2
-  sceneAsset: {fileID: 102900000, guid: ab14c14d832e946498fdd74ca84c9481, type: 3}
-  scenePath: Assets/_/Scenes/Pendulum-Floor_2.unity
-  additive: 0
 --- !u!1001 &5504995582493814678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -114324,3 +114384,4 @@ SceneRoots:
   - {fileID: 502312522}
   - {fileID: 2342434566342646314}
   - {fileID: 39420028}
+  - {fileID: 2024624418}
