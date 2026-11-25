@@ -160705,12 +160705,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5104879076409177738, guid: 876acea449893a745bd04e2089f4fb4f, type: 3}
       propertyPath: scenePath
-      value: Assets/_/Scenes/Pendulum-Boss.unity
+      value: Assets/_/Scenes/Pendulum-FinalBoss.unity
       objectReference: {fileID: 0}
     - target: {fileID: 5104879076409177738, guid: 876acea449893a745bd04e2089f4fb4f, type: 3}
       propertyPath: sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: 784f725aa309fa149bdd2a9e53595712, type: 3}
+      objectReference: {fileID: 102900000, guid: 2c78ff60b8765a7459d5a34d03e4eb9a, type: 3}
     - target: {fileID: 5439592144271127833, guid: 876acea449893a745bd04e2089f4fb4f, type: 3}
       propertyPath: scenePath
       value: Assets/_/Scenes/Pendulum-Floor_1.unity
