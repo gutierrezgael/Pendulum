@@ -126,6 +126,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 3819272072676649058}
   - {fileID: 1952145735609702804}
   - {fileID: 9204623747612958477}
   - {fileID: 7559679752144052356}
@@ -159,6 +160,18 @@ MonoBehaviour:
       - m_Target: {fileID: 5976372676710213498}
         m_TargetAssemblyTypeName: JouerSon, Assembly-CSharp
         m_MethodName: JouerParDessus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6406930420966507868}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -682,3 +695,74 @@ MonoBehaviour:
   sceneAsset: {fileID: 102900000, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
   scenePath: Assets/_/Scenes/Pendulum-Floor_3.unity
   additive: 0
+--- !u!1001 &4273516892767689193
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8367556862086981874}
+    m_Modifications:
+    - target: {fileID: 1030852960117764491, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030852960117764491, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030852960117764491, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030852960117764491, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030852960117764491, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030852960117764491, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030852960117764491, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030852960117764491, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030852960117764491, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030852960117764491, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427101824509667018, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+      propertyPath: m_Name
+      value: parasite_mort
+      objectReference: {fileID: 0}
+    - target: {fileID: 7180824391559077045, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+--- !u!4 &3819272072676649058 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030852960117764491, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+  m_PrefabInstance: {fileID: 4273516892767689193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6406930420966507868 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7180824391559077045, guid: e91b1464331c5bc45b0590b88fdc0d81, type: 3}
+  m_PrefabInstance: {fileID: 4273516892767689193}
+  m_PrefabAsset: {fileID: 0}

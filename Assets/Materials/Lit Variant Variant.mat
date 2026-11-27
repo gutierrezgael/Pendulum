@@ -23,17 +23,18 @@ Material:
   m_Name: Lit Variant Variant
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 2100000, guid: da317c76abdc8824ba93c1d9fa2f5840, type: 2}
-  m_ModifiedSerializedProperties: 0
+  m_ModifiedSerializedProperties: 16
   m_ValidKeywords:
+  - _ALPHATEST_ON
   - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   - _SPECULAR_SETUP
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2450
   stringTagMap:
-    RenderType: Opaque
+    RenderType: TransparentCutout
   disabledShaderPasses:
   - MOTIONVECTORS
   m_LockedProperties: 
@@ -42,11 +43,15 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
+    - _AlphaClip: 1
+    - _AlphaToMask: 1
+    - _Cutoff: 1
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 1
     - _WorkflowMode: 0
     m_Colors:
-    - _BaseColor: {r: 0.61412406, g: 0, b: 1, a: 0.2784314}
-    - _Color: {r: 0.61412406, g: 0, b: 1, a: 0.2784314}
-    - _SpecColor: {r: 0.43059838, g: 0, b: 1, a: 1}
+    - _BaseColor: {r: 0.5450983, g: 0, b: 1, a: 1}
+    - _Color: {r: 0.5450983, g: 0, b: 1, a: 1}
+    - _SpecColor: {r: 0.7845654, g: 0.5264151, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
