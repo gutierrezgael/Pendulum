@@ -1599,7 +1599,7 @@ MonoBehaviour:
   - {fileID: 654046554187597302}
   - {fileID: 1621147781071139511}
   exitActions: []
-  holdTime: 0
+  holdTime: 0.15
   afterTrigger: 3
   debugLogging: 1
   showHintMaterial: 0
@@ -3176,7 +3176,7 @@ MonoBehaviour:
   - {fileID: 1442595033297675842}
   - {fileID: 7740926476344690132}
   exitActions: []
-  holdTime: 0
+  holdTime: 0.15
   afterTrigger: 3
   debugLogging: 1
   showHintMaterial: 0
@@ -4867,7 +4867,7 @@ MonoBehaviour:
   - {fileID: 4172358345793983631}
   - {fileID: 6732930842212984069}
   exitActions: []
-  holdTime: 0
+  holdTime: 0.15
   afterTrigger: 3
   debugLogging: 1
   showHintMaterial: 0
@@ -6444,7 +6444,7 @@ MonoBehaviour:
   - {fileID: 3495535951399289438}
   - {fileID: 5512973996249854983}
   exitActions: []
-  holdTime: 0
+  holdTime: 0.15
   afterTrigger: 3
   debugLogging: 1
   showHintMaterial: 0

@@ -1680,7 +1680,7 @@ MonoBehaviour:
   - {fileID: 396161985800031632}
   - {fileID: 6992464422549724068}
   exitActions: []
-  holdTime: 0
+  holdTime: 0.15
   afterTrigger: 3
   debugLogging: 1
   showHintMaterial: 0
@@ -4364,7 +4364,7 @@ MonoBehaviour:
   - {fileID: 8470867118137126290}
   - {fileID: 6882536136828969447}
   exitActions: []
-  holdTime: 0
+  holdTime: 0.15
   afterTrigger: 3
   debugLogging: 1
   showHintMaterial: 0
