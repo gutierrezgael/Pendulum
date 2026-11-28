@@ -67253,7 +67253,7 @@ PrefabInstance:
       objectReference: {fileID: 1586367251}
     - target: {fileID: 4208232071895782027, guid: 876acea449893a745bd04e2089f4fb4f, type: 3}
       propertyPath: m_VersionIndex
-      value: 3895
+      value: 3898
       objectReference: {fileID: 0}
     - target: {fileID: 4243530246003086209, guid: 876acea449893a745bd04e2089f4fb4f, type: 3}
       propertyPath: afterTrigger
@@ -67289,7 +67289,7 @@ PrefabInstance:
       objectReference: {fileID: 1784480496}
     - target: {fileID: 7198263643028536509, guid: 876acea449893a745bd04e2089f4fb4f, type: 3}
       propertyPath: m_VersionIndex
-      value: 206
+      value: 209
       objectReference: {fileID: 0}
     - target: {fileID: 7476168435171424815, guid: 876acea449893a745bd04e2089f4fb4f, type: 3}
       propertyPath: m_Mesh
@@ -67313,7 +67313,7 @@ PrefabInstance:
       objectReference: {fileID: 25940097}
     - target: {fileID: 8976168117209480093, guid: 876acea449893a745bd04e2089f4fb4f, type: 3}
       propertyPath: m_VersionIndex
-      value: 6702
+      value: 6705
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5439592144271127833, guid: 876acea449893a745bd04e2089f4fb4f, type: 3}
